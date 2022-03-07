@@ -830,6 +830,10 @@ body {
   padding-top: 5%;
 }
 
+.navbar a:hover {
+  color: var(--primary);
+}
+
 .nav-tabs > li {
   flex: 1;
 }
