@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="style.css" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="magicslideshow/magicslideshow.css"/>
+  <script src="magicslideshow/magicslideshow.js" type="text/javascript"></script>
+
+  <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+  <script type="text/javascript" src="magicscroll/magicscroll.js"></script> 
+
+  <script src="https://kit.fontawesome.com/871e8a7152.js" crossorigin="anonymous"></script>
+
+
+  <title>Moola</title>
+  <style>
+    .slick-prev:before {
+      content: "<";
+      font-size: 30px;
+    }
+
+    .slick-next:before {
+      content: ">";
+      font-size: 30px;
+    }
+
+    .slick-arrow {
+      border: none;
+      /*background-color: rgba(0, 0, 0, 0.35);*/
+      background-color: rgba(51, 170, 51, .2) ;
+      z-index: 1;
+      padding: 15px;
+      color: #00a86b;
+    }
+
+    .slick-next {
+      margin-left: -30px !important;
+    }
+
+    .slick-prev {
+      margin-right: -30px !important;
+  
+    }
+
+
+    .slick-next,
+    .slick-prev {
+      font-size: 0;
+      height: 70px;
+      margin: auto 0;
+    }
+
+    /*LI https://www.tutorialsplane.com/bootstrap-change-dropdown-menu-background-color/*/
+    .change-dropdown-menu {
+    background-color: #FFFFFF;
+
+        }
+
+    /*LI add margin to left of*/
+    .navbar .navbar-brand{
+    margin-left:5% !important;
+
+    }
+
+
+    .MagicSlideshow.mss-horizontal .mss-slider .mss-arrow-prev:before,
+    .MagicSlideshow.mss-horizontal .mss-slider .mss-arrow-next:before {
+        border-color: #00a86b !important;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------------- MENU  ----------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-back sticky-top " style="background-color: rgb(27, 28, 46);">-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-back-blue sticky-top ">
+      <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">
+          <img src="img/Jade.svg" alt="" width="72" height="76" class="d-inline-block align-text-top" />
+      </a>
+
+      <a href="index.html" class="nav-link mt-4" style="color: #FFFFFF;font-size:28px">
+      Moola
+    </a>
+
+
+
+        <button class="navbar-toggler my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Name</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 pt-4"><!--LI" pt-4 moves list down-->
+             
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Inflation-Protected Fund</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Crypto-Winter Fund</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Gold Fund</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Crypto-Tech Fund</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Investing
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Index Funds</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Portfolios</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Trading Room</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Risk Management</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Strategies
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Capital Protection</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Diversification</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Themes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Leverage</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Growth</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Technology
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Moola Platform</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Moola Protocol</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Cloud</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Blockchain</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Security</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link" href="#"></a>
+              </li>
+  
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link" href="#"></a>
+              </li>
+  
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link ms-2" style="color: #00a86b" href="#">Log in</a><!--LI: changed color-->
+              </li>
+  
+  
+            </ul>
+  
+            <button class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold me-5 mt-4" type="submit"
+              style="height: 40px;margin-top: 2.5rem !important;"><!--LI: me-5 moves button to left-->
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<!------------------------------------------- END MENU  -------------------------------------------->
+
+
+
+    <!-- the header begins here -->
+    <div class="container-fluid market-moola">
+      <div class="container-xxl">
+        <div class="row overflow-hidden trading-header">
+
+          <div class="col-lg-6 py-5 text-white">
+            <!--<p class="text-uppercase "> <span href="index.html" class="border-bottom border-3 ">Home</span> / <span class="border-bottom border-3">Products</span> / Inflation-Protected Fund</p>-->
+            <h2 class="text-uppercase fs-sm-sm" style="margin-bottom: 5rem !important;"> <a href="index.html" class="text-white py-5 ">Home</a> / <a href="trading.html" class="text-white py-5">Products</a> / Inflation-Protected Fund</h2>
+
+
+            <h2 class="display-4 fw-bold">Trade and invest in top markets</h2>
+
+            <p class="fs-2">
+              On eToro, you can invest in global financial markets and easily
+              manage a variety of assets in a single portfolio.
+            </p>
+
+            <div class="row mx-auto text-center mx-lg-0 mt-4 g-0" style="max-width: 500px">
+              <div class="col-4">
+                <div style="height: 80px">
+                  <img
+                    src="img/stocks.svg"
+                    style="height: 100%; width: 95%"
+                    alt=""
+                  />
+                </div>
+
+                <p class="fw-light fs-2 mb-0">Stocks</p>
+                <p class="fw-bold fs-1">2714</p>
+              </div>
+
+              <div class="col-4">
+                <div class="w-100 border-primary" style="height: 80px">
+                  <img
+                    src="img/cryptocurrencies.svg"
+                    style="height: 100%; width: 95%"
+                    alt=""
+                  />
+                </div>
+                <p class="fw-light fs-2 mb-0">Crypto</p>
+                <p class="fw-bold fs-1">45</p>
+              </div>
+
+              <div class="col-4">
+                <div style="height: 80px">
+                  <img
+                    src="img/commodities.svg"
+                    style="height: 100%; width: 95%"
+                    alt=""
+                  />
+                </div>
+
+                <div class="w-100 text-nowrap">
+                  <p class="fw-light fs-2 mb-0 d-block">Commodities</p>
+                  <p class="fw-bold fs-1">33</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mx-auto mx-lg-0 mt-2 g-0 text-center" style="max-width: 500px">
+              <div class="col-4">
+                <div style="height: 80px">
+                  <img
+                    src="img/currencies.svg"
+                    style="height: 100%; width: 95%"
+                    alt=""
+                  />
+                </div>
+
+                <p class="fw-light fs-2 mb-0">Currencies</p>
+                <p class="fw-bold fs-1">2714</p>
+              </div>
+
+              <div class="col-4">
+                <div class="w-100 border-primary" style="height: 80px">
+                  <img
+                    src="img/indices.svg"
+                    style="height: 100%; width: 95%"
+                    alt=""
+                  />
+                </div>
+                <p class="fw-light fs-2 mb-0">Indices</p>
+                <p class="fw-bold fs-1">45</p>
+              </div>
+
+              <div class="col-4">
+                <div style="height: 80px">
+                  <img
+                    src="img/etfs.svg"
+                    style="height: 100%; width: 95%"
+                    alt=""
+                  />
+                </div>
+
+                <div class="w-100 text-nowrap">
+                  <p class="fw-light fs-2 mb-0 d-block">ETFs</p>
+                  <p class="fw-bold fs-1">33</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second flex -->
+          <div class="d-none d-lg-block col-lg-6 py-5">
+            <img
+              class="img-fluid mx-auto"
+              src="img/tradeMarketsv2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- the header ends here -->
+
+    <div class="container-xl pt-5">
+      <!-- ######################################### -->
+      <!-- first section after the header -->
+      <div class="row mt-4">
+        <!-- first coloum -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h3 class="fw-bolder mb-0 fs-1">Invest in Stocks</h3>
+          <p class="fs-2 mt-0">with 0% commission</p>
+          <p class="">
+            From technology to healthcare, New York to Hong Kong — with
+            fractional shares, it’s easy to fill your portfolio with a variety
+            of leading stocks from the world’s top exchanges. Invest in stocks
+            without paying commission and without limits on trading volume.
+          </p>
+
+          <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
+            Start Investing in Stocks
+          </button>
+
+          <p>
+            Your capital is at risk. Other fees apply. eToro Service ARSN 637
+            489 466 promoted by eToro AUS Capital Limited ACN 612 791 803 AFSL
+            491139. Capital at risk. See PDS. Zero commission does not apply to
+            short or leveraged positions. Zero commission means that no broker
+            fee has been charged when opening or closing the position. Limited
+            stock exchanges only.
+          </p>
+        </div>
+        <!-- end of first coloum -->
+
+        <!-- second coloum -->
+        <div class="col-lg-6">
+             <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <!-- aqui va el contenido -->
+                  <div class="card-header bg-transparent border-success">
+                    Header 1
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 2
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 3
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
+            >See All Stocks</a
+          >
+        </div>
+        <!-- end of second colum -->
+      </div>
+      <!-- end of the first section after the header -->
+
+      <!-- ###################################################33 -->
+      <!-- second section after the header -->
+      <div class="row mt-5 pt-5">
+        <!-- first coloum -->
+        <div class="col-lg-6 order-1 order-lg-0">
+          <!-- first card -->
+          <div
+            class="overflow-hidden d-flex p-2 justify-content-between w-75 mx-auto bg-white shadow-lg mb-4 bg-body rounded-3"
+          >
+            <div class="pt-3 d-flex">
+              <img
+                src="img/bitcoin50x50.png"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+
+              <div class="ms-1 pt-1">
+                <p class="m-0 p-0">BTC</p>
+                <p class="m-0 p-0">Bitcoin</p>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <h2 class="text-dark m-0 fw-bold">35434.92</h2>
+              <p class="text-danger">
+                -137.4244(-528%) <span class="text-muted">1D</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- second card -->
+
+          <div
+            class="overflow-hidden d-flex p-2 justify-content-between w-75 mx-auto bg-white shadow-lg mb-4 bg-body rounded-3"
+          >
+            <div class="pt-3 d-flex">
+              <img
+                src="img/eth50x50.png"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+
+              <div class="ms-1 pt-1">
+                <p class="m-0 p-0">ETH</p>
+                <p class="m-0 p-0">Ethereum</p>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <h2 class="text-dark m-0 fw-bold">35434.92</h2>
+              <p class="text-danger">
+                -137.4244(-528%) <span class="text-muted">1D</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- third card -->
+
+          <div
+            class="overflow-hidden d-flex p-2 justify-content-between w-75 mx-auto bg-white shadow-lg mb-4 bg-body rounded-3"
+          >
+            <div class="pt-3 d-flex">
+              <img
+                src="img/ltc50x50.png"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+
+              <div class="ms-1 pt-1">
+                <p class="m-0 p-0">LTC</p>
+                <p class="m-0 p-0">Litecoin</p>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <h2 class="text-dark m-0 fw-bold">35434.92</h2>
+              <p class="text-danger">
+                -137.4244(-528%) <span class="text-muted">1D</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- second coloum -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h3 class="fw-bolder mb-0 fs-1">Buy crypto</h3>
+          <p class="fs-2 mt-0">with ease</p>
+          <p class="">
+            Trade a wide variety of leading cryptoassets and crypto crosses,
+            using innovative tools that you won’t find anywhere else. eToro
+            Crypto offers the ultimate crypto solution: trading platform,
+            wallet, and exchange all in one, with the security of a regulated
+            fintech leader that you can trust.
+          </p>
+
+          <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
+            Start Buying Crypto
+          </button>
+
+          <p class="m-0">Cryptoassets are unregulated in some EU countries,</p>
+          <p class="m-0">the UK and Australia.</p>
+          <p>No consumer protection. Capital at risk</p>
+        </div>
+        <!-- end of second coloum -->
+      </div>
+      <!-- end of the second section after the header -->
+
+      <!-- ###################################################33 -->
+      <!-- third section after the header -->
+      <div class="row mt-5 pt-4">
+        <!-- first coloum -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h3 class="fw-bolder mb-0 fs-1">Discover opportunities</h3>
+          <p class="fs-2 mt-0">with commodities</p>
+          <p class="">
+            Take advantage of exciting opportunities in the world’s top resource
+            markets. With one-click trading, flexible leverage, and deep
+            liquidity, trading commodity CFDs allows you to choose an investment
+            amount without being limited to units, such as a whole barrel of oil
+            or an ounce of gold.
+          </p>
+
+          <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
+            Start Trading Commodities
+          </button>
+        </div>
+        <!-- end of first coloum -->
+
+        <!-- second coloum -->
+        <div class="col-lg-6">
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <!-- aqui va el contenido -->
+                  <div class="card-header bg-transparent border-success">
+                    Header 1
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 2
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 3
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
+            >See All Commodities</a
+          >
+        </div>
+        <!-- end of second colum -->
+      </div>
+      <!-- end of the third section after the header -->
+
+      <!-- ###################################################33 -->
+      <!-- fourth section after the header -->
+      <div class="row mt-5 pt-4">
+        <!-- first coloum -->
+        <div class="col-lg-6 text-center text-lg-start order-lg-1">
+          <h3 class="fw-bolder mb-0 fs-1">Go long or short</h3>
+          <p class="fs-2 mt-0">on currencies</p>
+          <p class="">
+            Trade on the largest, most active financial market in the world —
+            the foreign currency exchange, also known as FX. Buy and sell a wide
+            variety of major USD pairs and other currency crosses, with up to
+            1:30 leverage (or up to 1:400 as a Professional Client) to gain
+            greater exposure with less capital.
+          </p>
+
+          <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
+            Start Trading Currencies
+          </button>
+        </div>
+        <!-- end of first coloum -->
+
+        <!-- second coloum -->
+        <div class="col-lg-6">
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <!-- aqui va el contenido -->
+                  <div class="card-header bg-transparent border-success">
+                    Header 1
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 2
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 3
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
+            >See All Currencies</a
+          >
+        </div>
+        <!-- end of second colum -->
+      </div>
+      <!-- end of the fourth section after the header -->
+
+      <!-- ###################################################33 -->
+      <!-- fith section after the header -->
+      <div class="row mt-5 pt-4">
+        <!-- first coloum -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h3 class="fw-bolder mb-0 fs-1">Expand exposure</h3>
+          <p class="fs-2 mt-0">with indices</p>
+          <p class="">
+            Benefit from market trends of major stock exchanges around the world
+            — whether they go up or down. Indices are a perfect way to invest in
+            the overall movement of the stock market, with the flexibility to
+            manage your exposure as you see fit.
+          </p>
+
+          <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
+            Start Trading Indices
+          </button>
+        </div>
+        <!-- end of first coloum -->
+
+        <!-- second coloum -->
+        <div class="col-lg-6">
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <!-- aqui va el contenido -->
+                  <div class="card-header bg-transparent border-success">
+                    Header 1
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 2
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 3
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
+            >See All Indices</a
+          >
+        </div>
+        <!-- end of second colum -->
+      </div>
+      <!-- end of the fith section after the header -->
+
+      <!-- ###################################################33 -->
+      <!-- sith section after the header -->
+      <div class="row mt-5 pt-4">
+        <!-- first coloum -->
+        <div class="col-lg-6 text-center text-lg-start order-lg-1">
+          <h3 class="fw-bolder mb-0 fs-1">Diversify</h3>
+          <p class="fs-2 mt-0">with ETFs</p>
+          <p class="">
+            Exchange-traded funds (ETFs) allow investors a flexible yet
+            comprehensive way of investing in the financial markets at a
+            low-cost entry point and without management fees — making them ideal
+            for portfolio diversification. eToro offers both investing in ETFs
+            as the underlying asset, as well as trading them as CFDs.
+          </p>
+
+          <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
+            Start Trading ETFs
+          </button>
+
+          <p>Your capital is at risk.</p>
+        </div>
+        <!-- end of first coloum -->
+
+        <!-- second coloum -->
+        <div class="col-lg-6">
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <!-- aqui va el contenido -->
+                  <div class="card-header bg-transparent border-success">
+                    Header 1
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 2
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-success w-75 mx-auto shadow-lg mb-4 bg-body rounded"
+                >
+                  <div class="card-header bg-transparent border-success">
+                    Header 3
+                  </div>
+                  <div class="card-body text-success">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-success">
+                    Footer
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+          <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
+            >See All ETFs</a
+          >
+        </div>
+        <!-- end of second colum -->
+      </div>
+      <!-- end of the sith section after the header -->
+    </div>
+
+    <!-- ###################################################33 -->
+
+    <!-- begins of eight section this is out of the container-xxl -->
+    <div
+      class="get-to-know mt-5 d-none d-lg-block text-center"
+      style="min-height: 35rem"
+    >
+      <div class="w-50 mx-auto pt-3">
+        <h2 class="pt-3">Get to know eToro, risk-free</h2>
+        <p>
+          Every new account on eToro is credited with $100,000 in a virtual
+          portfolio, so you can practise trading all of the financial markets
+          that our platform offers in real time. Instantly switch between the
+          demo and real trading whenever you like
+        </p>
+      </div>
+    </div>
+    <!-- end of the eight section -->
+
+    <!-- ####################################3 -->
+    <!-- begins of the ninth section -->
+    <!-- faq -->
+    <section class="faq pt-5">
+      <h2 class="fw-700A txt-center">FAQ</h2>
+
+      <div class="contentA containerA">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                What is a virtual account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  A virtual account on eToro replicates the same features and
+                  market conditions as a real trading account, but is used for
+                  simulation purposes only. It is ideal for testing out the
+                  platform and practising your trading skills, since the virtual
+                  account is completely free, without any fees or loss of actual
+                  capital.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                What’s the difference between a demo account and a real account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Trading in a virtual account is simulated and uses virtual
+                  funds only. Trading in a real account is actual trading using
+                  real funds that you have deposited in your eToro account
+                  balance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                How do I set up my free demo account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>Just follow these 3 simple steps:</p>
+                <ol>
+                  <li>
+                    <p>
+                      <a href="#">Log in</a> to the Etoro platform or create an
+                      account
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="i4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#i43"
+                aria-expanded="false"
+                aria-controls="i43"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                culpa.
+              </button>
+            </h2>
+            <div
+              id="i43"
+              class="accordion-collapse collapse"
+              aria-labelledby="i4"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae laborum ratione voluptas nobis veritatis mollitia sunt?
+                  Repellendus ea blanditiis perferendis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="i5">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#i53"
+                aria-expanded="false"
+                aria-controls="i53"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                culpa.
+              </button>
+            </h2>
+            <div
+              id="i53"
+              class="accordion-collapse collapse"
+              aria-labelledby="i5"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae laborum ratione voluptas nobis veritatis mollitia sunt?
+                  Repellendus ea blanditiis perferendis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq -->
+    <!-- end of tenth section after the header -->
+
+    <!-- Footer -->
+
+  <!--<footer class="bg-light-grey mt-5">-->
+  <footer class="bg-light-grey mt-5 home-banner" > <!--LI: home-banner is a different background color-->
+    <div class="container-content p-5">
+      <div class="row g-5">
+        <div class="col-md-3">
+          <a href="#" class="navbar-brand">
+            <img src="img/Jade Poppin noM.svg" alt="logo Moola" class="img-fluid pb-2"
+              style="width: 6rem; margin-top: -2rem" />
+          </a>
+          <p class="light-grey-content fw-lighter">
+            Moola la plataforma social de inversión líder del mercado, ofrece
+            una amplia variedad de herramientas para invertir en mercados de
+            valores. Cree un portafolio con criptomonedas, acciones, materias
+            primas y ETF, entre otros
+          </p>
+          <p class="text-white fs-8 pt-5">ENCUÉNTRENOS EN</p>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-facebook facebook-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-instagram instagram-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-youtube youtube-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-twitter twitter-hover"></i></a>
+          <a href="#" class="fs-5 text-white"><i class="bi bi-linkedin linkedin-hover"></i></a>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">
+            PRINCIPALES INSTRUMENTOS
+          </p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Bitcoin (BTC)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Ethereum (ETH)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acciones de Amazon</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acciones de Apple</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Oro (materia prima)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Índice NSDQ100</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">SOBRE NOSOTROS</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acerca de Moola</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Reseñas sobre Moola</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Oportunidades de empleo</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Nuestras oficinas</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Accesibilidad</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Impresión</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">ASISTENCIA TÉCNICA</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Centro de ayuda</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo realizar un depósito</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo realizar un retiro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo abrir una cuenta</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo verificar su cuenta</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Servicio de atención al cliente</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">
+            PRIVACIDAD Y REGLAMENTACIÓN
+          </p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Política de cookies de eToro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Política de privacidad</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Reglamentación y licencias</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Declaración general sobre riesgos</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Términos y condiciones</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Datos de reclamaciones de “Clientes de la
+                FCA”</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">MÁS INFORMACIÓN</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo funciona el Copytrading</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Inversión responsable</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Evitar fraudes</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Qué es el apalancamiento y el margen</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Explicación para comprar y vender</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">SOCIOS Y PROMOCIONES</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Invite a un amigo</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Programa de afiliación</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Club eToro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">CopyPortfolios de socios</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+      </div>
+      
+        <p>
+          Copyright &copy; 2022 Moola - All rights reserved.
+        </p>
+      </section>
+    </div>
+    <!-- Container -->
+  </footer>
+  <!-- End Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

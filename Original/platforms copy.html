@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>markets</title>
+    
+  </head>
+
+  <body>
+    <!-- the menu begins here -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-back bg-light sticky-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/logo.svg"
+            alt=""
+            width="80"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler my-3"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Etoro</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item pt-3 border-end border-2 me-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="bi bi-search border"></i
+                ></a>
+              </li>
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Trading
+                </a>
+                <ul
+                  class="dropdown-menu mt-3 py-2"
+                  aria-labelledby="offcanvasNavbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html"
+                      >Trade Markets on eToro</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item py-2 fs-4 text-success fw-bold"
+                      href="platforms.html"
+                      >Trading Platform</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html"
+                      >Demo Account</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link" aria-current="page" href="#">Investing</a>
+              </li>
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link" href="#">Top Markets</a>
+              </li>
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link" href="#">Education</a>
+              </li>
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link" href="#">Company</a>
+              </li>
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link text-dark ms-2" href="#">Log in</a>
+              </li>
+            </ul>
+
+            <button
+              class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold"
+              type="submit"
+              style="height: 40px"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- the menu ends here -->
+
+    <!-- the header begins here -->
+    <div class="container-fluid market-etoro-platform-header">
+      <div class="container-xxl">
+        <div class="row py-5 text-center text-lg-start">
+          <div class="col-lg-6  ps-5 platform-header-1">
+            <!-- <p>Home / Trading / Markets</p> -->
+            <p class="text-uppercase ps-5">
+              <span class="">Home</span> / <span class="">Trading</span> /
+              Platforms-history
+            </p>
+            <h1 class="ps-5">The Etoro trading platform and app</h1>
+            <h3 class="ps-5">
+              eToro is the world’s leading social trading platform, trusted by
+              millions of users from more than 140 countries. The eToro platform
+              and app offer a variety of financial assets in which to trade and
+              invest.
+            </h3>
+            <a class="btnA ms-5 btn-greenA d-inline-block" href="#">Get Started</a>
+            <a class="d-block ps-5" href="#">Go to the trading platform</a>
+          </div>
+
+          <div class="col-lg-6 d-none d-lg-block ps-5">
+            <div class="ps-5">
+              <img
+                class="img-fluid"
+                src="images/header_bg_platform_2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- the header ends here -->
+
+    <div class="container-xl pt-5">
+      <!-- ######################################### -->
+      <!-- first section after the header -->
+      <div class="platform-join-etoro mt-4">
+        <p class="text-center pb-5 text-secondary mx-auto fs-2 w-75">
+          Join eToro today and start discovering a wide variety of benefits, on
+          mobile or web platform:
+        </p>
+
+        <div class="row text-center">
+          <div class="col-6 col-md-4">
+            <div class="platform-join-wrapper border-none">
+              <a href="">
+                <span class="platfom-join-img platfom-join-img-1"></span>
+                <span class="platform-join-text">2,000+ assets</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="platform-join-wrapper">
+              <a href="">
+                <span class="platfom-join-img platfom-join-img-2"></span>
+                <span class="platform-join-text">2,000+ assets</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="platform-join-wrapper">
+              <a href="">
+                <span class="platfom-join-img platfom-join-img-3"></span>
+                <span class="platform-join-text">2,000+ assets</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="platform-join-wrapper">
+              <a href="">
+                <span class="platfom-join-img platfom-join-img-4"></span>
+                <span class="platform-join-text">2,000+ assets</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="platform-join-wrapper">
+              <a href="">
+                <span class="platfom-join-img platfom-join-img-5"></span>
+                <span class="platform-join-text">2,000+ assets</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <div class="platform-join-wrapper">
+              <a href="">
+                <span class="platfom-join-img platfom-join-img-6"></span>
+                <span class="platform-join-text">2,000+ assets</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of the first section after the header -->
+
+      <!-- ###################################################33 -->
+      <!-- second section after the header -->
+      <section class="platform-multi-asset">
+        <h3 class="fw-bolder mb-0 fs-1 text-center pb-4 pt-5">
+          Multi-asset platform
+        </h3>
+
+        <p class="text-center text-secondary mx-auto fs-2 w-75">
+          eToro offers 2,000+ financial instruments across various classes, such
+          as stocks, crypto and more. To explore more visit the Trade Markets
+          Page.
+        </p>
+
+        <div class="platform-multi-asset-img">
+          <img class="img-fluid" src="images/platform-multiasset.jpg" alt="" />
+        </div>
+
+        <div class="d-flex pb-3">
+          <span class="align-self-center d-none d-lg-block pe-3">
+            <img
+              src="images/platform-icon-1.svg"
+              alt=""
+              style="width: 60px; height: 60px"
+            />
+          </span>
+          <p class="lead fs-3 px-3 px-lg-0">
+            To enable eToro clients to use advanced trading features, such as
+            leverage and short (SELL) orders, and to offer financial instruments
+            that normally cannot be traded, such as indices and commodities,
+            eToro utilises Contracts for Difference (CFDs). To read more about
+            CFD trading, click here.
+          </p>
+        </div>
+
+        <div class="d-flex">
+          <span class="align-self-center d-none d-lg-block pe-3">
+            <img
+              src="images/platform-icon-2.svg"
+              alt=""
+              style="width: 60px; height: 60px"
+            />
+          </span>
+          <p class="lead fs-3 px-3 px-lg-0">
+            Additionally, to enable traders and investors direct access to the
+            market, some asset classes, such as stocks and cryptoassets, offer
+            direct ownership of the underlying assets, which we buy and hold in
+            each client’s name.
+          </p>
+        </div>
+      </section>
+
+      <!-- end of the second section after the header -->
+
+      <!-- joshua  -->
+
+      <section class="deposits-withdrawls-fees my-10">
+        <div class="row">
+          <div class="col-lg-6 order-lg-0 order-1">
+            <div
+              class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto"
+            >
+              <h3 class="fw-bolder fs-1">Deposits, withdrawals and fees</h3>
+
+              <p class="fs-3 py-3 text-secondary">
+                eToro allows customers to
+                <a href="#" class="text-decoration-none">deposit</a> and
+                <a href="#" class="text-decoration-none">withdraw funds</a>
+                using a variety of payment methods, such as wire transfers,
+                credit cards, and more. eToro allows low minimum deposits and
+                <a href="#" class="text-decoration-none">unified fees</a> . You
+                can get more information on the
+                <a href="#" class="text-decoration-none"
+                  >Market Hours and Fees</a
+                >
+                page .
+              </p>
+              <div>
+                <a
+                  href="#"
+                  class="btnA btn-greenA fw-light text-decoration-none text-uppercase d-inline-block"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="images/sec-3-img.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- platform code -->
+
+    <section class='platform-carrousel py-5'>
+
+     <div class="mx-auto pb-5" style="max-width: 800px;">
+       <h2 class="text-white display-3 py-5 text-center">Platform features</h2>
+       <h3 class="text-white fs-2 text-center">eToro’s aims to open up markets to everyone, with an easy-to-use, intuitive interface. To help clients better manage their finances, it developed innovative trading features:</h3>
+      </div>
+      
+      <div class="w3-content" style="max-width:800px">
+        <div class="mySlides text-center" >
+          <img class="" src="images/platform-carousel-1.png" style="width:80%; margin:auto;">
+          <!-- <p class="mySlides">holamundo</p> -->
+        </div>
+
+        <div class="mySlides text-center">
+          <img  src="images/platform-carousel-2.png" style="width:80%">
+          <!-- <p class="mySlides" >adios mundo</p> -->
+        </div>
+
+        <div class="mySlides text-center" >
+          <img src="images/platform-carousel-3.png" style="width:80%">
+
+        </div>
+
+        <div class="mySlides text-center" >
+          <img src="images/platform-carousel-4.png" style="width:80%">
+        </div>
+
+        <div class="mySlides text-center" >
+          <img src="images/platform-carousel-5.png" style="width:80%">
+        </div>
+
+        <div class="mySlides text-center" >
+          <img src="images/platform-carousel-6.png" style="width:80%">
+        </div>
+
+
+      </div>
+      
+      <div class="w3-center">
+
+        <div class="w3-section d-none">
+          <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+          <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+
+        <div class="border-bottom border-secondary d-inline-block">
+
+          <button class="w3-button b-icon  display-3 px-5 py-4 demo" onclick="currentDiv(1)"><i class="bi bi-pie-chart"></i></button> 
+          <button class="w3-button b-icon  display-3 px-5 py-4 demo" onclick="currentDiv(2)"><i class="bi bi-zoom-in"></i></button> 
+          <button class="w3-button b-icon  display-3 px-5 py-4 demo" onclick="currentDiv(3)"><i class="bi bi-display"></i></button> 
+          <button class="w3-button b-icon  display-3 px-5 py-4 demo" onclick="currentDiv(4)"><i class="bi bi-coin"></i></button> 
+          <button class="w3-button b-icon  display-3 px-5 py-4 demo" onclick="currentDiv(5)"><i class="bi bi-file-earmark-bar-graph"></i></button> 
+          <button class="w3-button b-icon  display-3 px-5 py-4 demo" onclick="currentDiv(6)"><i class="bi bi-bezier2"></i></button> 
+        </div>
+      </div>
+
+
+      <div class="w3-container px-5 py-5 text-white text-center mx-auto" style="max-width: 800px;">
+ 
+        <div class="mySlidess px-5">
+          <p >VIRTUAL PORTFOLIO</p>
+          <p >Upon opening an account with eToro, each user receives a free $100,000 demo account. Using their account, eToro clients can build a virtual portfolio to practice and experiment with.</p>
+        </div>
+
+        <div class="mySlidess px-5">
+          
+          <p >TIPRANKS RESEARCH TAB</p>
+          <p>Gain insights from leading analysts in one place, as the Research Tab aggregates the cumulative knowledge of investors and experts from some of the world’s leading financial institutions.</p>
+        </div>
+
+        <div class="mySlidess px-5">
+          <p>ONE-CLICK TRADING</p>
+          <p>Operating under the realisation that many of its clients often repeat their trading habits, opening the same positions for the same instruments at different times, eToro introduced this feature. One-Click Trading enables clients to open a new position, using ready-made parameters, with a single click.</p>
+        </div>
+
+        <div class="mySlidess px-5">
+          <p>STOP LOSS AND TAKE PROFIT</p>
+          <p>To help clients better manage their positions, protect their investments and secure their profits, eToro enables them to set predetermined price points for closing an open position. Stop Loss closes the position if it reaches a certain loss, while Take Profit offers the same feature for securing profits at a predetermined price point.</p>
+        </div>
+
+        <div class="mySlidess px-5">
+          <p>TRAILING STOP LOSS</p>
+          <p>This feature is an expansion of the Stop Loss feature, enabling clients to keep a position open, as long as the markets are moving in the direction that benefits their trade.</p>
+        </div>
+
+        <div class="mySlidess px-5">
+          <p>PROCHARTS</p>
+          <p>A professional-grade technical analysis tool, ProCharts enables you to compare charts from different financial instruments and/or different time frames.</p>
+        </div>
+        
+        
+      </div>
+      
+    
+    </section>
+
+
+
+
+    <div class="container-xl pt-5">
+      <section class="platform-social-trading my-10">
+        <div class="text-center my-5">
+          <h2 class="fw-bold fs-1">Social trading</h2>
+          <p class="text-secondary fs-3">
+            Since 2010 eToro has been paying increasing attention to
+            <a href="#" class="text-decoration-none">social trading</a> ,
+            harnesses the wisdom of the crowd for the benefit of its clients.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <img src="images/sec-5-img.png" alt="" class="img-fluid" />
+        </div>
+
+        <div class="text-center w-50 mx-auto mt-5">
+          <p class="text-secondary">
+            One of eToro's key differentiators is that it has created a
+            community of short- and long-term investors, as opposed to the
+            loneliness that often characterizes online investing. eToro is a
+            thriving online social network of traders interacting, discussing
+            ideas and sharing their trading decisions and strategies on the
+            social news feed.
+          </p>
+        </div>
+      </section>
+
+      <section class="copy-trading my-10">
+        <div class="row">
+          <div class="col-lg-6 order-lg-0 order-1">
+            <div
+              class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto"
+            >
+              <h2 class="fs-1 fw-bold">Copy Trader</h2>
+
+              <p class="fs-3 text-secondary py-3">
+                <a href="#" class="text-decoration-none">CopyTrader</a> allows
+                investors to replicate the actions of other investors in real
+                time. To encourage top investors to allow their trades to be
+                copied, eToro has created the
+                <a href="#" class="text-decoration-none"
+                  >Popular Investor program</a
+                >
+                .
+              </p>
+              <div>
+                <a
+                  href="#"
+                  class="btnA btn-greenA fw-light text-decoration-none text-uppercase d-inline-block"
+                  >Start Copying Other Investors</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="images/sec-6-img.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+
+      <section class="copy-trading my-10">
+        <div class="row">
+          <div class="col-lg-6 order-lg-0 order-1">
+            <img src="images/sec-7-img.png" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto"
+            >
+              <h2 class="fs-2 fw-bold">CopyPortfolios</h2>
+
+              <p class="fs-3 text-secondary py-3">
+                Another unique product that eToro offers are
+                <a href="#" class="text-decoration-none">CopyPortfolios</a> ,
+                which are ready-made investment strategies that offer themed
+                investments, such as
+                <a href="#" class="text-decoration-none">medical cannabis</a> ,
+                <a href="#" class="text-decoration-none">autonomous vehicles</a>
+                , and people-based portfolios.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row shadow-lg p-3 mb-5 bg-body rounded mx-5">
+        <div class="col-lg-6 order-lg-0 order-1">
+          <div
+            class="h-100 d-flex flex-column justify-content-center text-start w-fix mx-auto"
+          >
+            <h2 class="fs-1 fw-bold">Download now!</h2>
+            <p class="fs-3 text-secondary py-3">
+              Discover eToro's innovative and intuitive mobile app. Trade short
+              and long anytime, anywhere, and switch between your laptop, tablet
+              and mobile with ease.
+            </p>
+            <div class="shadow-lg bg-body rounded p-3 d-flex">
+              <div class="d-flex px-3">
+                <a
+                  href="#"
+                  class="d-flex text-decoration-none border-end border-2 border-secondary text-dark"
+                >
+                  <span class="align-self-center d-block"
+                    ><img
+                      src="images/apple-grey-icon.svg"
+                      class="img-fluid"
+                      style="width: 3rem"
+                      alt=""
+                  /></span>
+                  <span class="ps-3 fs-5">AVAILABLE ON THE APP STORE</span>
+                </a>
+              </div>
+
+              <a href="#" class="d-flex text-decoration-none text-dark">
+                <span class="align-self-center d-block"
+                  ><img
+                    src="images/android-icon.svg"
+                    class="img-fluid"
+                    style="width: 3rem"
+                    alt=""
+                /></span>
+                <span class="ps-2 fs-5">AVAILABLE ON GOOGLE PLAY</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="images/sec-8-img.png" alt="" class="img-fluid" />
+        </div>
+      </section>
+    </div>
+    <!-- fin de codigo joshua -->
+
+    <!-- Footer -->
+
+    <footer class="bg-light-grey mt-5">
+      <div class="container-content p-5">
+        <div class="row g-5">
+          <div class="col-md-3">
+            <a href="#" class="navbar-brand">
+              <img
+                src="img/logo-white.svg"
+                alt="logo Etoro"
+                class="img-fluid pb-2"
+                style="width: 6rem; margin-top: -2rem"
+              />
+            </a>
+            <p class="light-grey-content fw-lighter">
+              eToro, la plataforma social de inversión líder del mercado, ofrece
+              una amplia variedad de herramientas para invertir en mercados de
+              valores. Cree un portafolio con criptomonedas, acciones, materias
+              primas y ETF, entre otros
+            </p>
+            <p class="text-white fs-8 pt-5">ENCUÉNTRENOS EN</p>
+            <a href="#" class="fs-5 me-3 text-white"
+              ><i class="bi bi-facebook facebook-hover"></i
+            ></a>
+            <a href="#" class="fs-5 me-3 text-white"
+              ><i class="bi bi-instagram instagram-hover"></i
+            ></a>
+            <a href="#" class="fs-5 me-3 text-white"
+              ><i class="bi bi-youtube youtube-hover"></i
+            ></a>
+            <a href="#" class="fs-5 me-3 text-white"
+              ><i class="bi bi-twitter twitter-hover"></i
+            ></a>
+            <a href="#" class="fs-5 text-white"
+              ><i class="bi bi-linkedin linkedin-hover"></i
+            ></a>
+          </div>
+          <!-- Col-md-3 -->
+
+          <div class="col-md-3">
+            <p class="light-grey-content fs-8 fw-light">
+              PRINCIPALES INSTRUMENTOS
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Bitcoin (BTC)</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Ethereum (ETH)</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Acciones de Amazon</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Acciones de Apple</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Oro (materia prima)</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Índice NSDQ100</a
+                >
+              </li>
+            </ul>
+
+            <p class="light-grey-content fs-8 fw-light">SOBRE NOSOTROS</p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Acerca de eToro</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Reseñas sobre eToro</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Oportunidades de empleo</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Nuestras oficinas</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Accesibilidad</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Impresión</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Col-md-3 -->
+
+          <div class="col-md-3">
+            <p class="light-grey-content fs-8 fw-light">ASISTENCIA TÉCNICA</p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Centro de ayuda</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Cómo realizar un depósito</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Cómo realizar un retiro</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Cómo abrir una cuenta</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Cómo verificar su cuenta</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Servicio de atención al cliente</a
+                >
+              </li>
+            </ul>
+
+            <p class="light-grey-content fs-8 fw-light">
+              PRIVACIDAD Y REGLAMENTACIÓN
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Política de cookies de eToro</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Política de privacidad</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Reglamentación y licencias</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Declaración general sobre riesgos</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Términos y condiciones</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Datos de reclamaciones de “Clientes de la FCA”</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Col-md-3 -->
+
+          <div class="col-md-3">
+            <p class="light-grey-content fs-8 fw-light">MÁS INFORMACIÓN</p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Cómo funciona el Copytrading</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Inversión responsable</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Evitar fraudes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Qué es el apalancamiento y el margen</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Explicación para comprar y vender</a
+                >
+              </li>
+            </ul>
+
+            <p class="light-grey-content fs-8 fw-light">SOCIOS Y PROMOCIONES</p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Invite a un amigo</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Programa de afiliación</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >Club eToro</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none fs-9 fw-300"
+                  >CopyPortfolios de socios</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Col-md-3 -->
+        </div>
+        <!-- Row -->
+
+        <section class="border-top light-grey-content fw-lighter pt-5 mt-5">
+          <p>
+            Los CFD son instrumentos complejos y tienen un alto riesgo de perder
+            dinero rápidamente debido al apalancamiento.
+            <span class="text-white-medium fw-bold"
+              >El 68% de las cuentas de inversionistas minoristas pierden dinero
+              cuando intercambian CFD con este proveedor.</span
+            >
+            Debe considerar si comprende cómo funcionan los CFD y si puede
+            permitirse asumir el alto riesgo de perder su dinero.
+          </p>
+          <p>
+            eToro (Europa) Ltd., una empresa de servicios financieros autorizada
+            y regulada por la Comisión del Mercado de Valores de Chipre (CySEC)
+            con la licencia n.º 109/10.
+          </p>
+          <p>
+            eToro (Reino Unido) Ltd., una empresa de servicios financieros
+            autorizada y regulada por la Autoridad de Conducta Financiera (FCA,
+            por su sigla en inglés) con la licencia FRN 583263.
+          </p>
+          <p>
+            eToro AUS Capital Limited, está autorizada por la Comisión de
+            Inversiones y Valores de Australia (ASIC) a proporcionar servicios
+            financieros conforme a la licencia 491139.
+          </p>
+          <p>
+            eToro (Seychelles) Ltd. cuenta con la licencia de la Autoridad de
+            Servicios Financieros de Seychelles (FSAS, en inglés) para prestar
+            servicios de agente de corretaje conforme a la Ley de Valores de
+            2007, con Licencia número SD076.
+          </p>
+          <p>
+            El rendimiento pasado no es un indicador de los resultados futuros.
+            La CNMV ha determinado que, debido a la complejidad y el riesgo, la
+            compra de estos productos por parte de inversores minoristas no es
+            apropiada.
+          </p>
+          <a
+            href="#"
+            class="links-color text-decoration-none d-inline-block fw-lighter mb-2"
+            >Información General de Riesgos</a
+          >
+          &#124;
+          <a
+            href="#"
+            class="links-color text-decoration-none d-inline-block fw-lighter mb-2"
+            >Términos y condiciones</a
+          >
+          <p>
+            Pida consejo a un asesor financiero independiente con la pertinente
+            licencia y asegúrese de que tiene el apetito de riesgo, la
+            experiencia y el conocimiento pertinentes antes de decidirse a
+            invertir. Bajo ninguna circunstancia eToro tendrá responsabilidad
+            alguna ante cualquier persona o entidad por (a) las pérdidas o daños
+            totales o parciales causados por, resultantes de o relacionados con
+            las transacciones vinculadas a CFD ni por (b) los daños directos,
+            indirectos, especiales, resultantes o fortuitos de cualquier
+            naturaleza.
+          </p>
+          <p>
+            Los mercados de las criptomonedas son servicios no regulados que no
+            se rigen por ningún marco reglamentario concreto (incluyendo MiFID)
+            de Europa ni de Seychelles. Por tanto, al utilizar nuestro servicio
+            de inversión en criptomonedas no se beneficiará de las protecciones
+            disponibles para aquellos clientes que utilizan los servicios de
+            inversión regulados de MiFID, como acceso al Fondo de compensación
+            para inversores de Chipre (ICF, por sus siglas en inglés), al Plan
+            de Compensación de Servicios Financieros (FSCS, por sus siglas en
+            inglés) y al Servicio de Protección y Defensa de Usuarios del Sector
+            Financiero para la resolución de conflictos, o de las protecciones
+            disponibles conforme al marco reglamentario de Seychelles (según
+            corresponda).
+          </p>
+          <p>
+            Invertir con eToro siguiendo, copiando o replicando las operaciones
+            de otros inversores conlleva un alto nivel de riesgo, incluso cuando
+            se sigue, copia o replica a inversores con un excelente desempeño.
+            Entre tales riesgos se incluye poder seguir o copiar las decisiones
+            de inversión de inversores que podrían no tener experiencia o ser
+            poco profesionales, o de inversores cuya finalidad, intención o
+            estado financiero pueda diferir del suyo. El rendimiento pasado de
+            un miembro de la comunidad de eToro no es un indicador fiable de su
+            rendimiento futuro. El contenido de la plataforma de trading social
+            de eToro lo generan los miembros de su comunidad y no contiene
+            asesoramiento ni recomendaciones realizados por parte de eToro, su
+            red de inversión social.
+          </p>
+          <p>
+            Copyright &copy; 2006-2022 eToro - Su red de inversión social. Todos
+            los derechos reservados.
+          </p>
+        </section>
+      </div>
+      <!-- Container -->
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+  </body>
+</html>

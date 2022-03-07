@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en" class="testing">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+
+    <style>
+      /*LI https://www.tutorialsplane.com/bootstrap-change-dropdown-menu-background-color/*/
+      .change-dropdown-menu {
+      background-color: #FFFFFF;
+  
+          }
+  
+      /*LI add margin to left of*/
+      .navbar .navbar-brand{
+      margin-left:2.5% !important;
+  
+      }
+  
+    </style>
+
+
+
+  </head>
+  <body>
+
+
+
+
+
+    <!-- the menu begins here -->
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-back sticky-top " style="background-color: rgb(27, 28, 46);">-->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-back-white sticky-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <!-- <img src="img/logo.svg" alt="" width="80" height="24" class="d-inline-block align-text-top" />-->
+        <img src="img/Jade Poppin noM.svg" alt="" width="100" height="50" class="d-inline-block align-text-top" />
+      </a>
+
+      <button class="navbar-toggler my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Moola</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+           
+            <li class="nav-item dropdown me-3 menu-i-hov">
+              <a class="nav-link" style="color: #000000" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown me-3 menu-i-hov">
+              <a class="nav-link" style="color: #000000" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Investing
+              </a>
+              <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown me-3 menu-i-hov">
+              <a class="nav-link" style="color: #000000" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Strategies
+              </a>
+              <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown me-3 menu-i-hov">
+              <a class="nav-link" style="color: #000000" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Technology
+              </a>
+              <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown me-3 menu-i-hov">
+              <a class="nav-link" style="color: #000000" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item me-3 menu-i-hov">
+              <a class="nav-link" href="#"></a>
+            </li>
+
+            <li class="nav-item me-3 menu-i-hov">
+              <a class="nav-link" href="#"></a>
+            </li>
+
+            <li class="nav-item me-3 menu-i-hov">
+              <a class="nav-link ms-2" style="color: #00a86b" href="#">Log in</a><!--LI: changed color-->
+            </li>
+
+
+          </ul>
+
+          <button class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold" type="submit"
+            style="height: 40px">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- the menu ends here -->
+
+
+    <!-- Header -->
+    <header class="headerA">
+      <div class="contentA containerA">
+        <h2 class="fw-700A">
+          Try eToro's free
+          <span>demo trading account</span>
+        </h2>
+        <h3 class="fw-300A">
+          Get started risk free with $100,000 in virtual funds on eToro’s
+          practice trading account
+        </h3>
+        <button class="btnA btn-blackA">TRY IT NOW</button>
+      </div>
+    </header>
+    <!-- Header -->
+
+    <!-- benefits -->
+    <div class="container-xl">
+
+    
+    <section class="benefitsA">
+      <div class="contentA ">
+        <div class="box-benefitsA">
+          <img src="images/create.svg" alt="" />
+          <h2 class="fw-700A">create an account</h2>
+          <!-- <p class="fw-300A" >-->
+            <p class="fw-300A" style="color: #000000">  <!--LI: change color-->
+            credited with $100K to build your virtual portfolio
+          </p>
+        </div>
+        <div class="box-benefitsA">
+          <img src="images/practise.svg" alt="" />
+          <h2 class="fw-700A">Practise trading</h2>
+          <!-- <p class="fw-300A" >-->
+            <p class="fw-300A" style="color: #000000">  <!--LI: change color-->
+            a variety of assets: stocks, crypto, commodities & more
+          </p>
+        </div>
+        <div class="box-benefitsA">
+          <img src="images/discuss.svg" alt="" />
+          <h2 class="fw-700A">Discuss strategies</h2>
+          <!-- <p class="fw-300A" >-->
+            <p class="fw-300A" style="color: #000000">  <!--LI: change color-->
+            and learn from top-performing investors</p>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- benefits -->
+
+    <!-- Line -->
+    <div class="lineA"></div>
+    <!-- Line -->
+
+    <!-- confidence -->
+    <section class="confidenceA containerA">
+      <div class="contentA">
+        <div class="info">
+          <div class="box">
+            <h2 class="fw-700A">Get the confidence to trade</h2>
+          <!-- <p class="fw-300A" >-->
+            <p class="fw-300A" style="color: #000000">  <!--LI: change color-->
+              Learn about the markets and hone your trading skills at your own
+              pace, with zero risk. Then, when you’re ready, you can easily
+              switch to real trading
+            </p>
+
+            <!-- <h3 class="fw-300A">-->
+            <h3 class="fw-300A" style="color: #000000"><!--LI: change color-->
+
+              How do I set up my free demo account?</h3>
+          </div>
+          <ul class="list list-none">
+
+           <!-- <li>
+              <p>
+                1) <a href="#">Log in</a> to the eToro platform or
+                <a href="#">create an account for free</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                2) Access the demo account by selecting
+                <span class="fw-700A">Virtual Portfolio</span> from the menu
+                under your username
+              </p>
+            </li>
+            <li>
+              <p>
+                3) Now you can practise trading <a href="#">live markets</a> in
+                real time without risking any capital
+              </p>
+            </li>-->
+
+
+            <li>
+              <p>
+                1) <a href="#" class="text-decoration-none" style="color: #00a86b">Log in</a> to the eToro platform or
+                <a href="#" class="text-decoration-none" style="color: #00a86b">create an account</a> for free</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                2) Access the demo account by selecting
+                <a href="#" class="text-decoration-none" style="color: #00a86b">Virtual Portfolio</a> from the menu
+                under your username
+              </p>
+            </li>
+            <li>
+              <p>
+                3) Now you can practise trading <a href="#" class="text-decoration-none" style="color: #00a86b">live markets</a> in
+                real time without risking any capital
+              </p>
+            </li>
+
+
+
+
+          </ul>
+          <div class="txt-center pY-3">
+            <a href="#" class="btnA btn-greenA">GET STARTED</a>
+          </div>
+        </div>
+        <img src="images/trade-confidence.png" alt="" />
+      </div>
+    </section>
+    <!-- confidence -->
+
+    <!-- Line -->
+    <div class="lineA"></div>
+    <!-- Line -->
+
+    <!-- confidence -->
+    <section class="confidenceA containerA">
+      <div class="contentA flex-reverse">
+        <div class="info">
+          <div class="box">
+            <h2 class="fw-700A">
+              Get to know eToro: simple, intuitive, innovative
+            </h2>
+          </div>
+          <ul class="list list-circle">
+            <li>
+              <p>
+                Manage your virtual portfolio easily with a clean and simple
+                interface.
+              </p>
+            </li>
+            <li>
+              <p>
+                Follow each instrument’s real-time trends with advanced analysis
+                tools.
+              </p>
+            </li>
+            <li>
+              <p>
+                Experiment with different risk levels by applying leverage, Stop
+                Loss and Take Profit.
+              </p>
+            </li>
+            <li>
+              <p>
+                Experiment with different risk levels by applying leverage, Stop
+                Loss and Take Profit <a href="#" class="text-decoration-none" style="color: #00a86b">copy their portfolios.</a>
+              </p>
+            </li>
+            <li>
+              <p>Try eToro’s ready-made thematic <a href="#" class="text-decoration-none" style="color: #00a86b"> portfolio.</a></p>
+            </li>
+          </ul>
+          <div class="txt-center pY-3">
+            <a href="#" class="btnA btn-greenA">GET THE DEMO TRADING APP</a>
+          </div>
+        </div>
+        <img src="images/get-to-know.png" alt="" />
+      </div>
+    </section>
+    <!-- confidence -->
+
+    <!-- Line -->
+    <div class="lineA"></div>
+    <!-- Line -->
+
+    <!-- trade -->
+    <div class="trade">
+      <h2 class="fw-700A">
+        Which markets can i trade <span>with eToro demo account?</span>
+      </h2>
+
+      <!--<h3 class="fw-300A">-->
+      <h3 class="fw-300A" style="color: #000000"><!--LI: change color-->
+
+        3000+ instruments to trade from leading global markets
+      </h3>
+
+      <div class="contentA">
+        <a class="box-benefitsA hover" href="#">
+          <img src="images/stocks.svg" alt="" />
+          <h2 class="fw-700A">Stocks</h2>
+        </a>
+
+        <a class="box-benefitsA hover" href="#">
+          <img src="images/cryptocurrencies.svg" alt="" />
+          <h2 class="fw-700A">Crypto</h2>
+        </a>
+        <a class="box-benefitsA hover" href="#">
+          <img src="images/commodities.svg" alt="" />
+          <h2 class="fw-700A">Commodities</h2>
+        </a>
+
+        <a class="box-benefitsA hover" href="#">
+          <img src="images/currencies.svg" alt="" />
+          <h2 class="fw-700A">currencies</h2>
+        </a>
+
+        <a class="box-benefitsA hover" href="#">
+          <img src="images/indices.svg" alt="" />
+          <h2 class="fw-700A">Indices</h2>
+        </a>
+
+        <a class="box-benefitsA hover" href="#">
+          <img src="images/etf.svg" alt="" />
+          <h2 class="fw-700A">ETFs</h2>
+        </a>
+      </div>
+    </div>
+    <!-- trade -->
+
+    <!-- Line -->
+    <div class="lineA"></div>
+    <!-- Line -->
+
+    <!-- confidence -->
+    <section class="confidenceA containerA">
+      <div class="contentA">
+        <div class="info">
+          <div class="box">
+            <h2 class="fw-700A">Why practise with a trading simulator?</h2>
+
+            <!--<p class="fw-300A">-->
+            <p class="fw-300A" style="color: #000000">
+              eToro’s demo trading account is an excellent tool for beginners.
+              It allows you to make mistakes and experiment with different
+              investment strategies without any financial risk. Plus, it enables
+              you to try out <a href="#" class="text-decoration-none" style="color: #00a86b">eToro’s trading platform</a>,
+              experiencing tools and features firsthand, while gaining the
+              confidence to start investing.
+            </p>
+          </div>
+
+          <div class="txt-center pY-3">
+            <a href="#" class="btnA btn-greenA">START PRACTISING</a>
+          </div>
+        </div>
+        <img src="images/trading-simulator.png" alt="" />
+      </div>
+    </section>
+    <!-- confidence -->
+
+    <!-- Line -->
+    <div class="lineA"></div>
+    <!-- Line -->
+
+    <!-- faq -->
+    <section class="faq">
+      <h2 class="fw-700A txt-center">FAQ</h2>
+
+      <div class="contentA containerA">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                What is a virtual account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  A virtual account on eToro replicates the same features and
+                  market conditions as a real trading account, but is used for
+                  simulation purposes only. It is ideal for testing out the
+                  platform and practising your trading skills, since the virtual
+                  account is completely free, without any fees or loss of actual
+                  capital.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                What’s the difference between a demo account and a real account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Trading in a virtual account is simulated and uses virtual
+                  funds only. Trading in a real account is actual trading using
+                  real funds that you have deposited in your eToro account
+                  balance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                How do I set up my free demo account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>Just follow these 3 simple steps:</p>
+                <ol>
+                  <li>
+                    <p>
+                      <a href="#">Log in</a> to the Etoro platform or create an
+                      account
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="i4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#i43"
+                aria-expanded="false"
+                aria-controls="i43"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                culpa.
+              </button>
+            </h2>
+            <div
+              id="i43"
+              class="accordion-collapse collapse"
+              aria-labelledby="i4"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae laborum ratione voluptas nobis veritatis mollitia sunt?
+                  Repellendus ea blanditiis perferendis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="i5">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#i53"
+                aria-expanded="false"
+                aria-controls="i53"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                culpa.
+              </button>
+            </h2>
+            <div
+              id="i53"
+              class="accordion-collapse collapse"
+              aria-labelledby="i5"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae laborum ratione voluptas nobis veritatis mollitia sunt?
+                  Repellendus ea blanditiis perferendis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!-- faq -->
+
+    <!-- Footer -->
+
+  <!--<footer class="bg-light-grey mt-5">-->
+  <footer class="bg-light-grey mt-5 home-banner" > <!--LI: home-banner is a different background color-->
+    <div class="container-content p-5">
+      <div class="row g-5">
+        <div class="col-md-3">
+          <a href="#" class="navbar-brand">
+            <img src="img/Jade Poppin noM.svg" alt="logo Moola" class="img-fluid pb-2"
+              style="width: 6rem; margin-top: -2rem" />
+          </a>
+          <p class="light-grey-content fw-lighter">
+            Moola la plataforma social de inversión líder del mercado, ofrece
+            una amplia variedad de herramientas para invertir en mercados de
+            valores. Cree un portafolio con criptomonedas, acciones, materias
+            primas y ETF, entre otros
+          </p>
+          <p class="text-white fs-8 pt-5">ENCUÉNTRENOS EN</p>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-facebook facebook-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-instagram instagram-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-youtube youtube-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-twitter twitter-hover"></i></a>
+          <a href="#" class="fs-5 text-white"><i class="bi bi-linkedin linkedin-hover"></i></a>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">
+            PRINCIPALES INSTRUMENTOS
+          </p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Bitcoin (BTC)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Ethereum (ETH)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acciones de Amazon</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acciones de Apple</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Oro (materia prima)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Índice NSDQ100</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">SOBRE NOSOTROS</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acerca de Moola</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Reseñas sobre Moola</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Oportunidades de empleo</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Nuestras oficinas</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Accesibilidad</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Impresión</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">ASISTENCIA TÉCNICA</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Centro de ayuda</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo realizar un depósito</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo realizar un retiro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo abrir una cuenta</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo verificar su cuenta</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Servicio de atención al cliente</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">
+            PRIVACIDAD Y REGLAMENTACIÓN
+          </p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Política de cookies de eToro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Política de privacidad</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Reglamentación y licencias</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Declaración general sobre riesgos</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Términos y condiciones</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Datos de reclamaciones de “Clientes de la
+                FCA”</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">MÁS INFORMACIÓN</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo funciona el Copytrading</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Inversión responsable</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Evitar fraudes</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Qué es el apalancamiento y el margen</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Explicación para comprar y vender</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">SOCIOS Y PROMOCIONES</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Invite a un amigo</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Programa de afiliación</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Club eToro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">CopyPortfolios de socios</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+      </div>
+      
+        <p>
+          Copyright &copy; 2022 Moola - All rights reserved.
+        </p>
+      </section>
+    </div>
+    <!-- Container -->
+  </footer>
+  <!-- End Footer -->
+
+    <!-- Boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boostrap -->
+  </body>
+</html>

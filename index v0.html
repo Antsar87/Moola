@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="style.css" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="magicslideshow/magicslideshow.css"/>
+  <script src="magicslideshow/magicslideshow.js" type="text/javascript"></script>
+
+  <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+  <script type="text/javascript" src="magicscroll/magicscroll.js"></script> 
+
+
+  <title>Moola</title>
+  <style>
+    .slick-prev:before {
+      content: "<";
+      font-size: 30px;
+    }
+
+    .slick-next:before {
+      content: ">";
+      font-size: 30px;
+    }
+
+    .slick-arrow {
+      border: none;
+      background-color: rgba(0, 0, 0, 0.35);
+      z-index: 1;
+      padding: 15px;
+      color: white;
+    }
+
+    .slick-next {
+      margin-left: -30px !important;
+    }
+
+    .slick-prev {
+      margin-right: -30px !important;
+  
+    }
+
+
+    .slick-next,
+    .slick-prev {
+      font-size: 0;
+      height: 70px;
+      margin: auto 0;
+    }
+
+    /*LI https://www.tutorialsplane.com/bootstrap-change-dropdown-menu-background-color/*/
+    .change-dropdown-menu {
+    background-color: #FFFFFF;
+
+        }
+
+    /*LI add margin to left of*/
+    .navbar .navbar-brand{
+    margin-left:2.5% !important;
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<!------------------------------------------- MENU ------------------------------------------------------>
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-back sticky-top " style="background-color: rgb(27, 28, 46);">-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-back-blue sticky-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="img/logo.svg" alt="" width="80" height="24" class="d-inline-block align-text-top" />-->
+          <embed src="img/Jade.svg" alt="" width="200" height="70" class="d-inline-block align-text-top" />
+        </a>
+  
+        <button class="navbar-toggler my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Moola</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 pt-4"><!--LI" pt-4 moves list down-->
+             
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Investing
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Strategies
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Technology
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-3 menu-i-hov">
+                <a class="nav-link" style="color: #FFFFFF" href="#" id="offcanvasNavbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+                  <ul class="dropdown-menu mt-3 py-2 change-dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="trading.html">Trade Markets on eToro</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="platforms.html">Trading Platform</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item py-2 fs-4" href="demo.html">Demo Account</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link" href="#"></a>
+              </li>
+  
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link" href="#"></a>
+              </li>
+  
+              <li class="nav-item me-3 menu-i-hov">
+                <a class="nav-link ms-2" style="color: #00a86b" href="#">Log in</a><!--LI: changed color-->
+              </li>
+  
+  
+            </ul>
+  
+            <button class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold me-5 mt-4" type="submit"
+              style="height: 40px;margin-top: 2.5rem !important;"><!--LI: me-5 moves button to left-->
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!------------------------------------------- END MENU ------------------------------------------------------>
+
+<!------------------------------------------- HEADER ------------------------------------------------------>
+
+  <div class="container-fluid home-etoro-header" style="background-color: rgb(27, 28, 46)">
+    <div class="container-xl h-100">
+      <div class="row py-5 text-center text-lg-start h-100">
+        <!--<div class="col-lg-1 platform-header-1 home-etoro-header-cols">
+         <h2 class="fw-bold text-start pt-5 ps-5 pt-lg-0 text-light pb-5 display-5 home-etoro-header-h2">
+            Invest like a <span style="color:#00a86b">Pro </span>
+          </h2>
+
+          <h3 class="d-none ps-5 d-md-block text-start home-etoro-header-h3">
+            Moola intelligent portfolios invest in multiple assets, funds and ETFs to meet your goals.
+          </h3>
+
+          <div class="text-start">
+            <a href="" class="d-lg-none btnA btn-greenA">Join Now</a>
+          </div>
+        </div>-->
+
+        <div class="col-lg-7 platform-header-1 home-etoro-header-cols">
+ 
+           <h1 class="fw-bold text-start pt-5 ps-5 pt-lg-0 text-light pb-3 display-1 home-etoro-header-h2">
+           The <span style="color:#00a86b">Power </span> to invest 
+           </h1>
+ 
+           <h3 class="d-none ps-5 d-md-block text-start home-etoro-header-h3">
+            Moola is the most intelligent solution to invest in crypto, DeFi, stocks and gold.
+            Moola is specialized in index funds and ETFs. Choose your own mix of funds to build your diversified portfolio.
+           </h3>
+ 
+           <div class="text-start">
+             <a href="" class="d-lg-none btnA btn-greenA">Join Now</a>
+           </div>
+         </div>
+
+
+        <div class="col-lg-6 d-none d-lg-block home-etoro-header-cols-2">
+          <div>
+            <img class="img-fluid" alt="" style="max-width: 90%" />
+          </div>
+        </div>
+
+        
+        <div class="col d-lg-none d-flex">
+          <p class="text-white align-self-end">
+            Lorem ipsum dolor, quibusdam obcaecati, consequatur rem ut ratione <!--display on mobile only-->
+            vitae nobis earum provident ullam aliquam?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!------------------------------------------- END HEADER ------------------------------------------------------>
+
+  <div class="container-xl pt-5">
+    <!-- ######################################### -->
+    <!-- first section after the header -->
+
+   <!-- Modified cards to have same length adding col-sm d-flex flex-fill -->
+     <!-- https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns -->
+    <section class="cripto-cards m-0 d-none d-md-block">
+      <h3 class="fw-bolder mb-0 fs-1 d-lg-none pb-4 pt-5">
+        Choose an investment product to get started
+        <span class="fw-normal">and discover why over 20 million users trust eToro</span>
+      </h3>
+
+      <div class="row">
+        <div class="col-4 px-0 col-sm d-flex">
+          <div class="card rounded-1A mx-auto" style="max-width: 364px">
+            <div class="card-body px-0 py-0">
+              <div class="px-5 py-5">
+                <h2 class="card-title fw-bold flex-fill">Crypto</h2>
+                <p class="fs-4">
+                  Invest in crypto funds with 0% commissions.
+                </p>
+                <a href="#" class="fw-bold d-block text-decoration-none pb-3" style="color: #00a86b">Learn More</a><!--LI: changed color to Jade-->
+                <a href="#" class="btnA btn-greenA fs-4 py-2 px-4">Invest in Crypto</a>
+              </div>
+
+              <div class="">
+                <img class="" style="width: 100%" src="images/home-card-1.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 pe-0 col-sm d-flex">
+          <div class="card rounded-1A mx-auto" style="max-width: 364px">
+            <div class="card-body px-0 py-0">
+              <div class="px-5 py-5">
+                <h2 class="card-title fw-bold flex-fill">Gold</h2>
+                <p class="fs-4">
+                  Invest in gold funds with 0% commissions. 
+                </p>
+                <a href="#" class="fw-bold d-block text-decoration-none pb-3" style="color: #00a86b">Learn More</a><!--LI: changed color to Jade-->
+                <a href="#" class="btnA btn-greenA fs-4 py-2 px-4">Invest in Gold</a>
+              </div>
+
+              <div class="">
+                <img class="" style="width: 100%" src="images/home-card-1.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 pe-0 me-6 col-sm d-flex">
+          <div class="card rounded-1A mx-auto" style="max-width: 364px">
+            <div class="card-body px-0 py-0">
+              <div class="px-5 py-5">
+                <h2 class="card-title fw-bold flex-fill">DeFi</h2>
+                <p class="fs-4">
+                  Invest in DeFi products with 0% commissions.
+                </p>
+                <a href="#" class="fw-bold d-block text-decoration-none pb-3" style="color: #00a86b">Learn More</a><!--LI: changed color to Jade-->
+                <a href="#" class="btnA btn-greenA fs-4 py-2 px-4">Invest in DeFi</a>
+              </div>
+
+              <div class="">
+                <embed class="" style="width: 100%" src="images/home-card-1.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- end of the first section after the header -->
+
+    <!-- ############# MOBILE ONLY################### -->
+    <!-- second section after the header -->
+    <section class="home-nav-tabs d-md-none ">
+      <h3 class="fw-bolder mb-0 fs-1 pb-4 pt-5">
+        Choose an investment product to get started
+        <span class="fw-normal">and discover why over 20 million users trust eToro</span>
+      </h3>
+
+      <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 active w-100 text-dark" id="home-tab" data-bs-toggle="tab"
+            data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+            Stocks & ETFs
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 w-100 text-dark" id="profile-tab" data-bs-toggle="tab"
+            data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+            Crypto
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 w-100 text-dark" id="contact-tab" data-bs-toggle="tab"
+            data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+            CFDs
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <h3 class="fw-bold pt-5 fs-2">Invest commission free</h3>
+          <p class="lead fs-3 mb-5">
+            No markup on stocks & ETFs from leading exchanges – no matter how
+            much you invest
+          </p>
+          <a href="" class="btn btn-outline-success mt-5 py-2 px-3 fs-3">Learn More</a>
+          <video class="w-100" autoplay loop muted
+            src="//marketing.etorostatic.com/cache1/hp/v_242/images/funnels/stocks-4.mp4"></video>
+        </div>
+
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <h3 class="fw-bold pt-5 fs-2">Buy & sell cryptocurrencies</h3>
+          <p class="lead fs-3 mb-5">
+            Buy, sell and store Bitcoin and other leading cryptos with ease
+          </p>
+          <a href="" class="btn btn-outline-success mt-5 py-2 px-3 fs-3">Learn More</a>
+          <video class="w-100" autoplay loop muted
+            src="//marketing.etorostatic.com/cache1/hp/v_242/images/funnels/stocks-4.mp4"></video>
+        </div>
+
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <h3 class="fw-bold pt-5 fs-2">
+            Advanced trading, more opportunities
+          </h3>
+          <p class="lead fs-3 mb-5">
+            BGo long or short on FX, commodities and indices with flexible
+            leverage
+          </p>
+          <a href="" class="btn btn-outline-success mt-5 py-2 px-3 fs-3">Learn More</a>
+          <video class="w-100" autoplay loop muted
+            src="//marketing.etorostatic.com/cache1/hp/v_242/images/funnels/stocks-4.mp4"></video>
+        </div>
+      </div>
+    </section>
+    <!-- end of the second section after the header -->
+ <!-- ############# END MOBILE ONLY################### -->
+
+
+    <!-- section little banner bellow the cards   -->
+
+    <section class="home-banner mt-5 rounded-1A p-5">
+      <div class="row">
+        <div class="col-md-7 text-white align-self-center">
+          <h2 class="fw-bold">New to funds?</h2>
+          <p class="lead fs-5">
+            Moola funds are a simple, transparent, and cost-effective way to gain exposure 
+            to a wide range of assets. With one product, you can gain exposure to hundreds of 
+            different individual assets.
+          </p>
+          <a class="btnA btn-greenA py-2 px-3" href="#">Learn More</a>
+          <!--<a href="#" class="text-decoration-none" style="color: #00a86b">Learn More</a>-->
+        </div>
+
+        <!--<div class="col-md-5 text-center overflow-hidden">
+          <img src="images/hombe-banner-1.png" class="" style="max-width: 378px" alt="" />
+        </div>-->
+
+        <div class="col-md-5 text-center overflow-hidden">
+          <figure>
+            <svg viewBox="0 0 63.6619772368 63.6619772368">
+              <circle class="pie1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+              <circle class="pie2" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+              <circle class="pie3" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+              <circle class="pie4" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+            </svg>
+          </figure>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- end of the little section -->
+
+    <section class="discoverA my-10">
+      <div class="container-xl d-flex justify-content-between">
+        <div class="d-none d-lg-block">
+  
+          <!-- box Start -->
+          <div class="boxA d-flex">
+            <img src="images/BTC img.jpg" alt="" />
+            <div class="body d-flex align-items-end justify-content-between border w-100 px-3">
+              <ul>
+                <li><span class="fw-600A fs-md">Crypto</span></li>
+                <li><span class="fs-sm c-grey">heloise Greff</span></li>
+                <li class="mt-4">
+                  <h2 class="fs-big c-green">20%</h2>
+                </li>
+                <li class="fs-sm-sm c-grey">
+                  <span>GAIN (LAST 12M)</span>
+                </li>
+              </ul>
+              <div class="txt-center box-border d-flex align-items-center justify-content-end flex-column">
+                <p class="numberA fs-md-big m-0">5</p>
+                <span class="fs-sm-sm c-grey">Risk</span>
+              </div>
+            </div>
+          </div>
+          <!-- box Start -->
+  
+          <!-- box Start -->
+          <div class="boxA d-flex mt-4">
+            <img src="images/Gold img.jpg" alt="" />
+            <div class="body d-flex align-items-end justify-content-between border w-100 px-3">
+              <ul>
+                <li><span class="fw-600A fs-md">Gold</span></li>
+                <li><span class="fs-sm c-grey">heloise Greff</span></li>
+                <li class="mt-4">
+                  <h2 class="fs-big c-green">30%</h2>
+                </li>
+                <li class="fs-sm-sm c-grey">
+                  <span>GAIN (LAST 12M)</span>
+                </li>
+              </ul>
+              <div class="txt-center box-border d-flex align-items-center justify-content-end flex-column">
+                <p class="numberA fs-md-big m-0">5</p>
+                <span class="fs-sm-sm c-grey">Risk</span>
+              </div>
+            </div>
+          </div>
+          <!-- box Start -->
+  
+          <!-- box Start -->
+          <div class="boxA d-flex mt-4">
+            <img src="images/DEFI img.jpg" alt="" />
+            <div class="body d-flex align-items-end justify-content-between border w-100 px-3">
+              <ul>
+                <li><span class="fw-600A fs-md">DeFi</span></li>
+                <li><span class="fs-sm c-grey">heloise Greff</span></li>
+                <li class="mt-4">
+                  <h2 class="fs-big c-green">50%</h2>
+                </li>
+                <li class="fs-sm-sm c-grey">
+                  <span>GAIN (LAST 12M)</span>
+                </li>
+              </ul>
+              <div class="txt-center box-border d-flex align-items-center justify-content-end flex-column">
+                <p class="numberA fs-md-big m-0">5</p>
+                <span class="fs-sm-sm c-grey">Risk</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- box Start -->
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <div>
+            <p class="fs-1 light-grey fw-200A">
+              Whether you’re a beginner investor or you simply don’t have time to watch the markets,                
+              <span class="fw-bold">Moola funds</span>
+              are a perfect way to invest in the overall movement of the market, with the flexibility 
+              to manage your exposure as you see fit.
+            </p>
+            <div>
+              <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4">Discover People</a>
+            </div>
+          </div>
+  
+  
+  
+  
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="icons-images">
+
+      <div class="row my-5">
+        <div class="col-lg-6 order-lg-0 order-1">
+          <img src="images/brands.png" alt="" class="img-fluid" />
+        </div>
+
+        <div class="col-lg-6">
+          <div class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto">
+            <h2 class="fs-2 light-grey fw-bold">
+              Funds
+            </h2>
+
+            <p class="fs-3 light-grey">
+              Moola funds are a simple, transparent, and cost-effective way to gain exposure 
+              to a wide range of assets. With one product, you can gain exposure to hundreds of 
+              different individual assets.
+            </p>
+            <div>
+
+              <!--<a href="#" class="btn btn-lg btn-outline-primary fs-2 px-3 my-4">invest in stocks</a>-->
+              <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4">invest in stocks</a>
+            </div>
+
+            <p class="lighter-grey mt-4 fs-13">
+              The zero commission policy means that the brokerage does not
+              charge any commission when opening or closing a trade, but
+              does not apply to leveraged or short selling positions.
+              Instead, other types of fees may apply. Your capital is at
+              risk. For eToro AUS Capital Limited AFSL 491139 clients, only
+              stocks listed on US stock exchanges are available for
+              commission-free trading. Other stocks are offered as
+              derivative products (but incur fees) through ARSN 637 489 466,
+              which promotes eToro AUS Capital Limited CAR 001281634. For
+              more information,
+              <a href="#" class="lighter-grey">click here</a> .
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- working on home trade carousel cards -->
+    <section id="home-trade-invest" class="py-5">
+      <div class="row mt-5">
+        <div class="col-lg-6">
+           <!--<h3 class="fw-bold display-5">-->
+          <h3 class="fw-bold display-5 light-grey"><!-- LI -->       
+            <span class="fw-normal">Whether you’re a beginner investor or you simply don’t have time to watch the markets,</span> 
+              Moola funds <span class="fw-normal">are a perfect way to invest in the overall movement of the market, with the flexibility to manage your exposure as you see fit.
+            </span>
+          </h3>
+          <!--<a href="#" class="btn my-4 btn-outline-secondary fs-2 px-3">Start Trading</a>-->
+          <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4 ">Start Trading</a><!-- LI -->
+
+          <h2 class="text-success display-1 fw-bold border-start border-4 border-secondary ps-2 mt-5 mb-5">
+            362,178,700
+            <span class="d-block text-uppercase text-secondary fs-5">trades opened on etoro</span>
+          </h2>
+        </div>
+
+        <div class="col-lg-6">
+          <!-- card on the top -->
+          <div class="card mb-3 w-75 mx-auto">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" style="background-color: #494d5a">
+                  <img src="images/home-invest-1.png" class="d-block img-fluid mx-auto" alt="..." />
+                  <div class="bg-light">
+                    <p class="mb-0 text-uppercase px-3 pt-3">
+                      amzn
+                      <span class="border-start border-3 ps-2 text-capitalize lead fs-4">amazon</span>
+                    </p>
+                    <p class="mb-0 px-3">
+                      2798.89
+                      <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="background-color: #3f434e">
+                  <img src="images/home-ivest-2.png" class="d-block img-fluid mx-auto" alt="..." />
+                  <div class="bg-light">
+                    <p class="mb-0 text-uppercase px-3 pt-3">
+                      aapl
+                      <span class="border-start border-3 ps-2 text-capitalize lead fs-4">apple</span>
+                    </p>
+                    <p class="mb-0 px-3">
+                      2798.89
+                      <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" style="background-color: #3284ff">
+                  <img src="images/home-invest-3.png" class="d-block img-fluid mx-auto" alt="..." />
+                  <div class="bg-light">
+                    <p class="mb-0 text-uppercase px-3 pt-3">
+                      goog
+                      <span class="border-start border-3 ps-2 text-capitalize lead fs-4">alphabet</span>
+                    </p>
+                    <p class="mb-0 px-3">
+                      2798.89
+                      <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cards at the bottom -->
+          <div class="row w-75 d-none d-lg-flex mx-auto">
+            <!-- card on the left -->
+            <div class="col me-1 px-0">
+              <div class="card mb-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-color: #0064a6">
+                      <img src="images/home-invest-bl-1.png" class="d-block img-fluid mx-auto" style="max-height: 12rem"
+                        alt="..." />
+                      <div class="bg-light">
+                        <p class="mb-0 text-uppercase px-3 pt-3">
+                          wdc
+                          <span class="border-start border-3 ps-2 text-capitalize lead fs-4">western digital</span>
+                        </p>
+                        <p class="mb-0 px-3">
+                          2798.89
+                          <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" style="background-color: #480089">
+                      <img src="images/home-invest-bl-2.png" class="d-block img-fluid mx-auto" style="max-height: 12rem"
+                        alt="..." />
+                      <div class="bg-light">
+                        <p class="mb-0 text-uppercase px-3 pt-3">
+                          Aaba
+                          <span class="border-start border-3 ps-2 text-capitalize lead fs-4">Atlaba Inc</span>
+                        </p>
+                        <p class="mb-0 px-3">
+                          2798.89
+                          <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" style="background-color: #c0140b">
+                      <img src="images/home-invest-bl-3.png" class="d-block img-fluid mx-auto" style="max-height: 12rem"
+                        alt="..." />
+                      <div class="bg-light">
+                        <p class="mb-0 text-uppercase px-3 pt-3">
+                          mcd
+                          <span class="border-start border-3 ps-2 text-capitalize lead fs-4">McDonals</span>
+                        </p>
+                        <p class="mb-0 px-3">
+                          2798.89
+                          <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card on the right -->
+            <div class="col px-0">
+              <div class="card mb-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-color: #ebeae6">
+                      <img src="images/home-invest-br-1.png" class="d-block img-fluid mx-auto" style="max-height: 12rem"
+                        alt="..." />
+                      <div class="bg-light">
+                        <p class="mb-0 text-uppercase px-3 pt-3">
+                          amd
+                          <span class="border-start border-3 ps-2 text-capitalize lead fs-4">Advanced Micro..</span>
+                        </p>
+                        <p class="mb-0 px-3">
+                          2798.89
+                          <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" style="background-color: #ffef29">
+                      <img src="images/home-invest-br-2.png" class="d-block img-fluid mx-auto" style="max-height: 12rem"
+                        alt="..." />
+                      <div class="bg-light">
+                        <p class="mb-0 text-uppercase px-3 pt-3">
+                          snap
+                          <span class="border-start border-3 ps-2 text-capitalize lead fs-4">Snapchat Inc..</span>
+                        </p>
+                        <p class="mb-0 px-3">
+                          2798.89
+                          <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" style="background-color: #8cc63e">
+                      <img src="images/home-invest-br-3.png" class="d-block img-fluid mx-auto" style="max-height: 12rem"
+                        alt="..." />
+                      <div class="bg-light">
+                        <p class="mb-0 text-uppercase px-3 pt-3">
+                          nvda
+                          <span class="border-start border-3 ps-2 text-capitalize lead fs-4">Nvidia Corporation</span>
+                        </p>
+                        <p class="mb-0 px-3">
+                          2798.89
+                          <span class="text-danger ms-1 fs-">-9199(-3.18%)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <section class="discoverA my-10">
+      <div class="container-xl d-flex justify-content-between">
+        <div class="d-none d-lg-block">
+          <!-- box Start -->
+          <div class="boxA d-flex">
+            <img src="images/4.jpg" alt="" />
+            <div class="body d-flex align-items-end justify-content-between border w-100 px-3">
+              <ul>
+                <li><span class="fw-600A fs-md">rubymza</span></li>
+                <li><span class="fs-sm c-grey">heloise Greff</span></li>
+                <li class="mt-4">
+                  <h2 class="fs-big c-green">3.39%</h2>
+                </li>
+                <li class="fs-sm-sm c-grey">
+                  <span>GAIN (LAST 12M)</span>
+                </li>
+              </ul>
+              <div class="txt-center box-border d-flex align-items-center justify-content-end flex-column">
+                <p class="numberA fs-md-big m-0">5</p>
+                <span class="fs-sm-sm c-grey">Risk</span>
+              </div>
+            </div>
+          </div>
+          <!-- box Start -->
+
+          <!-- box Start -->
+          <div class="boxA d-flex mt-4">
+            <img src="images/4.jpg" alt="" />
+            <div class="body d-flex align-items-end justify-content-between border w-100 px-3">
+              <ul>
+                <li><span class="fw-600A fs-md">rubymza</span></li>
+                <li><span class="fs-sm c-grey">heloise Greff</span></li>
+                <li class="mt-4">
+                  <h2 class="fs-big c-green">3.39%</h2>
+                </li>
+                <li class="fs-sm-sm c-grey">
+                  <span>GAIN (LAST 12M)</span>
+                </li>
+              </ul>
+              <div class="txt-center box-border d-flex align-items-center justify-content-end flex-column">
+                <p class="numberA fs-md-big m-0">5</p>
+                <span class="fs-sm-sm c-grey">Risk</span>
+              </div>
+            </div>
+          </div>
+          <!-- box Start -->
+
+          <!-- box Start -->
+          <div class="boxA d-flex mt-4">
+            <img src="images/4.jpg" alt="" />
+            <div class="body d-flex align-items-end justify-content-between border w-100 px-3">
+              <ul>
+                <li><span class="fw-600A fs-md">rubymza</span></li>
+                <li><span class="fs-sm c-grey">heloise Greff</span></li>
+                <li class="mt-4">
+                  <h2 class="fs-big c-red">-3.39%</h2>
+                </li>
+                <li class="fs-sm-sm c-grey">
+                  <span>GAIN (LAST 12M)</span>
+                </li>
+              </ul>
+              <div class="txt-center box-border d-flex align-items-center justify-content-end flex-column">
+                <p class="numberA fs-md-big m-0">5</p>
+                <span class="fs-sm-sm c-grey">Risk</span>
+              </div>
+            </div>
+          </div>
+          <!-- box Start -->
+        </div>
+        <div class="d-flex flex-column justify-content-between">
+          <div>
+            <p class="fs-1 light-grey fw-200A">
+              Join the Social Trading revolution. Connect with other traders,
+              discuss trading strategies, and use our patented
+              <span class="fw-bold">CopyTrader™</span>
+              technology to automatically copy their trading portfolio
+              performance.
+            </p>
+            <div>
+
+              <!--<a href="#" class="btn btn-lg btn-outline-primary fs-2 px-3 my-4">Discover People-->
+              <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4">Discover People<!-- LI -->  
+
+              </a>
+            </div>
+          </div>
+
+          <div class="stadistic mt-5 d-sm-flex align-items-end">
+            <img src="images/stadistic.png" alt="" />
+            <ul>
+              <li>
+                <h3 class="c-green fw-200A">83.7 <span>%</span></h3>
+              </li>
+              <li>
+                <p class="fs-085-em c-grey">
+                  <span class="fw-bold"> AVERAGE YEARLY PROFIT </span>
+                  OF OUR 50 MOST COPIED TRADERS FOR 2021
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bitcoins-brands">
+      <div class="container-xl">
+        <div class="row my-5">
+          <div class="col-lg-6 order-lg-0 order-1">
+            <div class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto">
+              <p class="fs-2 light-grey">
+                <span class="fw-bold">Browse an ever-evolving selection of cryptocurrencies
+                  ,</span>
+                and buy and sell the underlying asset on eToro's
+                cryptocurrency trading platform. Build your
+                cryptocurrency-based portfolio and enjoy benefits most
+                exchanges don't offer, like near-immediate execution of market
+                orders.
+              </p>
+              <div>
+
+                <!--<a href="#" class="btn btn-lg btn-outline-primary fs-2 px-3 my-4">explore cryptocurrencies</a>-->  
+                <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4">explore cryptocurrencies</a><!-- LI -->  
+              </div>
+
+              <p class="lighter-grey mt-4 fs-15">
+                The prices of cryptocurrencies can fluctuate widely and
+                therefore investing in them may not be suitable for all
+                investors. No EU regulatory framework oversees investment in
+                cryptocurrencies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <img src="images/bitcoin.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </div>
+
+
+  <div class="container-xl pt-5">
+ 
+    <section class="icons-images">
+      <!--https://www.magictoolbox.com/magicslideshow/integration/-->
+      <div class="row my-5">
+        <div class="MagicSlideshow"data-options="slide-duration:1500;effect:blinds3d;">
+          <img src="images/bitcoin.png"/>
+          <img src="images/home-invest-3.png"/>
+          <img src="images/brands.png"/>
+      </div>
+
+        <div class="col-lg-6">
+          <div class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto">
+            <h2 class="fs-2 light-grey fw-bold">
+              100% shares, 0% commissions
+            </h2>
+
+            <p class="fs-3 light-grey">
+              Why pay commissions when you don't have to? Invest in a wide
+              variety of stocks on eToro without paying margins or
+              administrative or management fees. There is also no limit to
+              the investment volume.
+            </p>
+            <div>
+
+              <!--<a href="#" class="btn btn-lg btn-outline-primary fs-2 px-3 my-4">invest in stocks</a>-->
+              <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4">invest in stocks</a>
+            </div>
+
+            <p class="lighter-grey mt-4 fs-13">
+              The zero commission policy means that the brokerage does not
+              charge any commission when opening or closing a trade, but
+              does not apply to leveraged or short selling positions.
+              Instead, other types of fees may apply. Your capital is at
+              risk. For eToro AUS Capital Limited AFSL 491139 clients, only
+              stocks listed on US stock exchanges are available for
+              commission-free trading. Other stocks are offered as
+              derivative products (but incur fees) through ARSN 637 489 466,
+              which promotes eToro AUS Capital Limited CAR 001281634. For
+              more information,
+              <a href="#" class="lighter-grey">click here</a> .
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="bitcoins-brands">
+      <div class="container-xl">
+        <div class="row my-5">
+          <div class="col-lg-6 order-lg-0 order-1">
+            <div class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto">
+              <p class="fs-2 light-grey">
+                <span class="fw-bold">Browse an ever-evolving selection of cryptocurrencies
+                  ,</span>
+                and buy and sell the underlying asset on eToro's
+                cryptocurrency trading platform. Build your
+                cryptocurrency-based portfolio and enjoy benefits most
+                exchanges don't offer, like near-immediate execution of market
+                orders.
+              </p>
+              <div>
+
+                <!--<a href="#" class="btn btn-lg btn-outline-primary fs-2 px-3 my-4">explore cryptocurrencies</a>-->  
+                <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4">explore cryptocurrencies</a><!-- LI -->  
+              </div>
+
+              <p class="lighter-grey mt-4 fs-15">
+                The prices of cryptocurrencies can fluctuate widely and
+                therefore investing in them may not be suitable for all
+                investors. No EU regulatory framework oversees investment in
+                cryptocurrencies.
+              </p>
+            </div>
+          </div>
+
+          <div class="MagicSlideshow" data-options="slide-duration:1500;effect:slide-in;">
+            <img src="images/bitcoin.png"/>
+            <img src="images/home-invest-3.png"/>
+            <img src="images/brands.png"/>
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="icons-images">
+      <!--https://www.magictoolbox.com/magicscroll/integration/-->
+      <div class="row my-5">
+        <div class="MagicScroll mcs-bounce" data-options="mode: animation;">
+          <img src="images/bitcoin.png"/>
+          <img src="images/home-invest-3.png"/>
+          <img src="images/brands.png"/>
+      </div>
+
+        <div class="col-lg-6">
+          <div class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto">
+            <h2 class="fs-2 light-grey fw-bold">
+              100% shares, 0% commissions
+            </h2>
+
+            <p class="fs-3 light-grey">
+              Why pay commissions when you don't have to? Invest in a wide
+              variety of stocks on eToro without paying margins or
+              administrative or management fees. There is also no limit to
+              the investment volume.
+            </p>
+            <div>
+
+              <!--<a href="#" class="btn btn-lg btn-outline-primary fs-2 px-3 my-4">invest in stocks</a>-->
+              <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4">invest in stocks</a>
+            </div>
+
+            <p class="lighter-grey mt-4 fs-13">
+              The zero commission policy means that the brokerage does not
+              charge any commission when opening or closing a trade, but
+              does not apply to leveraged or short selling positions.
+              Instead, other types of fees may apply. Your capital is at
+              risk. For eToro AUS Capital Limited AFSL 491139 clients, only
+              stocks listed on US stock exchanges are available for
+              commission-free trading. Other stocks are offered as
+              derivative products (but incur fees) through ARSN 637 489 466,
+              which promotes eToro AUS Capital Limited CAR 001281634. For
+              more information,
+              <a href="#" class="lighter-grey">click here</a> .
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bitcoins-brands">
+      <div class="container-xl">
+        <div class="row my-5">
+          <div class="col-lg-6 order-lg-0 order-1">
+            <div class="d-flex flex-column h-100 justify-content-center text-start w-fix mx-auto">
+              <p class="fs-2 light-grey">
+                <span class="fw-bold">Browse an ever-evolving selection of cryptocurrencies
+                  ,</span>
+                and buy and sell the underlying asset on eToro's
+                cryptocurrency trading platform. Build your
+                cryptocurrency-based portfolio and enjoy benefits most
+                exchanges don't offer, like near-immediate execution of market
+                orders.
+              </p>
+              <div>
+
+                <!--<a href="#" class="btn btn-lg btn-outline-primary fs-2 px-3 my-4">explore cryptocurrencies</a>-->  
+                <a href="#" class="btn btn-lg btn-greenA fs-2 px-3 my-4">explore cryptocurrencies</a><!-- LI -->  
+              </div>
+
+              <p class="lighter-grey mt-4 fs-15">
+                The prices of cryptocurrencies can fluctuate widely and
+                therefore investing in them may not be suitable for all
+                investors. No EU regulatory framework oversees investment in
+                cryptocurrencies.
+              </p>
+            </div>
+          </div>
+
+          <div class="MagicScroll" data-options="mode: cover-flow; height: 275px;">
+            <img src="images/bitcoin.png"/>
+            <img src="images/home-invest-3.png"/>
+            <img src="images/brands.png"/>
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+
+
+  <!-- tgrying carousel -->
+
+
+ <!-- <div class="mt-10" style="background-color: #F3F5F6;">-->
+  <div class="mt-10 pt-5 pb-5" style="background-color: #FFFFFF;"><!-- LI: changes color and added top and bottom padding -->
+
+
+     <!--<h2 class="text-center fs-1">We are only as <span class="text-dark text-uppercase fw-bold">Good</span></h2>
+    <h2 class="text-center mb-5 fs-1">as our clients say <span class="text-dark text-uppercase fw-bold">We are.</span>-->
+
+    <h2 class="text-center fs-1 text-black-cs">We are only as <span class=" text-uppercase fw-bold">Good</span></h2>
+    <h2 class="text-center mb-5 fs-1 text-black-cs">as our clients say <span class="text-uppercase fw-bold">We are.</span>
+
+
+    </h2>
+
+    <section class="slider d-flex ">
+
+
+      <div class="px-5 p-4 boxA">
+        <div class="body">
+          <!--<h2 class="fw-bold fs-md-big light-grey">easy and fun</h2>
+          <p class="fs-2 fs-md-big fw-200 light-grey">great platform for starting traders. Great selection and transparent fee-->
+          <h2 class="fw-bold fs-md-big text-black-cs">easy and fun</h2><!--LI-->
+          <p class="fs-2 fs-md-big fw-200 text-black-cs">great platform for starting traders. Great selection and transparent fee<!--LI-->
+
+
+            System!...</p>
+
+          <div>
+            <img src="images/7.jpg" alt="">
+            <div>
+              <!--<p">YveLemkens</p>-->
+              <p class="text-black-cs">YveLemkens</p><!--LI-->
+              <ul class="d-flex">
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-half"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="px-5 p-4 boxA">
+        <div class="body">
+          <!--<h2 class="fw-bold fs-md-big light-grey">easy and fun</h2>
+          <p class="fs-2 fs-md-big fw-200 light-grey">great platform for starting traders. Great selection and transparent fee-->
+            <h2 class="fw-bold fs-md-big text-black-cs">easy and fun</h2><!--LI-->
+            <p class="fs-2 fs-md-big fw-200 text-black-cs">great platform for starting traders. Great selection and transparent fee<!--LI-->
+            System!...</p>
+
+          <div>
+            <img src="images/7.jpg" alt="">
+            <div>
+              <!--<p">YveLemkens</p>-->
+              <p class="text-black-cs">YveLemkens</p><!--LI-->
+              <ul class="d-flex">
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="px-5 p-4 boxA">
+        <div class="body">
+          <!--<h2 class="fw-bold fs-md-big light-grey">easy and fun</h2>
+          <p class="fs-2 fs-md-big fw-200 light-grey">great platform for starting traders. Great selection and transparent fee-->
+            <h2 class="fw-bold fs-md-big text-black-cs">easy and fun</h2><!--LI-->
+            <p class="fs-2 fs-md-big fw-200 text-black-cs">great platform for starting traders. Great selection and transparent fee<!--LI-->
+            System!...</p>
+
+          <div>
+            <img src="images/7.jpg" alt="">
+            <div>
+              <!--<p">YveLemkens</p>-->
+              <p class="text-black-cs">YveLemkens</p><!--LI-->
+              <ul class="d-flex">
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="px-5 p-4 boxA">
+        <div class="body">
+          <!--<h2 class="fw-bold fs-md-big light-grey">easy and fun</h2>
+          <p class="fs-2 fs-md-big fw-200 light-grey">great platform for starting traders. Great selection and transparent fee-->
+            <h2 class="fw-bold fs-md-big text-black-cs">easy and fun</h2><!--LI-->
+            <p class="fs-2 fs-md-big fw-200 text-black-cs">great platform for starting traders. Great selection and transparent fee<!--LI-->
+            System!...</p>
+
+          <div>
+            <img src="images/7.jpg" alt="">
+            <div>
+              <!--<p">YveLemkens</p>-->
+              <p class="text-black-cs">YveLemkens</p><!--LI-->
+              <ul class="d-flex">
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+                <li>
+                  <i class="bi bi-star-fill"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </section>
+
+  </div>
+
+  <!-- finishing the carrousel -->
+
+  <!-- the global leader section -->
+
+  <!--<section id='home-global-leader' class="pb-5 mt-10" style="background-color: #FFFFFF;">-->
+  <section id='home-global-leader' class="pb-5 mt-10" > <!--LI-->
+    <div class="container-xl">
+
+      <div class="text-center py-5">
+       <!-- <h2 class="text-dark fw-bold">The global leader of social trading</h2>-->
+        <h2 class="fw-bold light-grey">The global leader of social trading</h2>
+        <!--<p>Discover why millions of users from over 140 countries choose to trade with eToro</p>-->
+        <p class="light-grey">Discover why millions of users from over 140 countries choose to trade with eToro</p><!--LI-->
+
+      </div>
+
+      <div class="row text-lg-center">
+
+        <div class="col-lg-4">
+
+          <div class="d-inline-block d-lg-block ">
+            <img src="images/home-global-leader-1.png" class="img-fluid" style="max-width: 150px;" alt="">
+          </div>
+
+          <div class="d-inline-block">
+            <!--<h3 class="fw-bold fs-2">Regulated</h3>
+            <p class="text-wrap ">Our company is regulated by the FCA and CySec</p>-->
+            <h3 class="fw-bold fs-2 light-grey">Regulated</h3>
+            <p class="text-wrap light-grey">Our company is regulated by the FCA and CySec</p><!--LI-->
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-4">
+
+          <div class="d-inline-block d-lg-block">
+            <img src="images/home-global-leader-2.png" class="img-fluid" style="max-width: 150px;" alt="">
+          </div>
+
+          <div class="d-inline-block">
+            <!--<h3 class="fw-bold fs-2">Regulated</h3>
+            <p class="text-wrap ">Our company is regulated by the FCA and CySec</p>-->
+            <h3 class="fw-bold fs-2 light-grey">Regulated</h3>
+            <p class="text-wrap light-grey">Our company is regulated by the FCA and CySec</p><!--LI-->
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <div class="d-inline-block d-lg-block">
+            <img src="images/home-global-leader-3.png" style="max-height: 200px; max-width: 150px;" class="img-fluid"
+              alt="">
+          </div>
+
+          <div class="d-inline-block">
+            <!--<h3 class="fw-bold fs-2">Regulated</h3>
+            <p class="text-wrap ">Our company is regulated by the FCA and CySec</p>-->
+            <h3 class="fw-bold fs-2 light-grey">Regulated</h3>
+            <p class="text-wrap light-grey">Our company is regulated by the FCA and CySec</p><!--LI-->
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+<!--<section id='home-form' class="pt-5" style="background-color: #fff;">-->
+  <section id='home-form' class="pt-5" style="background-color: #FFFFFF">
+    <div class="container-md ">
+
+
+      <div class="row justify-content-center">
+
+        <div class="d-none d-lg-block col-4 pt-5">
+
+          <!--<h2 class="mb-5 pt-5 text-secondary text-center">Your ease of mind is our priority</h2>-->
+          <h2 class="mb-5 pt-5 light-grey text-center">Your ease of mind is our priority</h2><!--LI-->
+          <div class="d-flex mb-4">
+            <img src="images/home-form-icon-1.svg" alt="">
+            <!-- <p class="px-4 text-secondary">Trade on a platform trusted by milions of users.</p>-->
+            <p class="px-4 light-grey">Trade on a platform trusted by milions of users.</p><!--LI-->
+          </div>
+
+          <div class="d-flex mb-4">
+            <img src="images/home-form-icon-2.svg" alt="">
+             <!-- <p class="px-4 text-secondary">We value and respect your privacy.</p>-->
+            <p class="px-4 light-grey">We value and respect your privacy.</p><!--LI-->
+          </div>
+
+          <div class="d-flex mb-5">
+            <img src="images/home-form-icon-3.svg" alt="">
+            <!--<p class="px-4 text-secondary">Your funds are kept safe at reputable banks</p>-->
+            <p class="px-4 light-grey">Your funds are kept safe at reputable banks</p><!--LI-->
+          </div>
+
+          <!--<p class="text-secondary mt-4">
+            By signing up you will receive marketing emails, which you may unsubscribe from anytime.
+          </p>
+          <p class="text-secondary mt-4">All trading involves risk, Only risk capital you're prepared to lose.</p>-->
+
+
+          <p class="light-grey mt-4">
+            By signing up you will receive marketing emails, which you may unsubscribe from anytime.
+          </p><!--LI-->
+          <p class="light-grey mt-4">All trading involves risk, Only risk capital you're prepared to lose.</p><!--LI-->
+
+
+        </div>
+
+        
+        <div class='col-lg-4 form-side-left pt-5'>
+
+          <form action="">
+
+            <!--<h2 class="mb-5 pt-5 px-1A text-secondary text-start">Create an account</h2>-->
+            <h2 class="mb-5 pt-5 px-1A light-grey text-start">Create an account</h2><!--LI-->
+            <div class="modern-form">
+
+
+              <fieldset class='float-label-field' style="color: #00a86b">
+                <label for="txtName">Username</label>
+                <input id="txtName" type='text'>
+              </fieldset>
+
+              <fieldset class='float-label-field' style="color: #00a86b">
+                <label for="txtEmail">Email</label>
+                <input id="txtEmail" type='text'>
+              </fieldset>
+
+              <fieldset class='float-label-field' style="color: #00a86b">
+                <label for="txtPassword">Password</label>
+                <input id="txtPassword" type='password'>
+              </fieldset>
+
+              <!--<div class="form-check pb-2">-->
+              <div class="form-check pb-2 light-grey"><!--LI-->
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  I accept the eToro Aus and eToro Service(by Gleneagle).
+                </label>
+              </div>
+              <!--<div class="form-check">-->
+              <div class="form-check light-grey"><!--LI-->
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  <!--I acknowledge that my information will be used in accordance with the <span class="text-info">Privacy-->
+                    I acknowledge that my information will be used in accordance with the <span style="color: #00a86b">Privacy <!--LI: change color-->
+                    <!--Policy</span> and <span class="text-info">Cookie Policy </span>-->
+                    Policy</span> and <span style="color: #00a86b">Cookie Policy</span>.<!--LI: change color-->
+                </label>
+              </div>
+
+
+            </div>
+
+            <!--<input class="btn btn-primary w-75 d-block py-2 rounded fs-2 mx-auto" type="button" value='Create Account'>--> 
+            <input class="btn btn-greenA w-75 d-block py-2 rounded fs-2 mx-auto" type="button" value='Create Account'><!-- LI -->  
+  
+          </form>
+          <p class="text-secondary text-center py-3">or</p>
+          <div class=" text-center">
+            <button class="loginBtn loginBtn--facebook w-75">
+              Login with Facebook
+            </button>
+
+            <button class="loginBtn loginBtn--google w-75">
+              Login with Google
+            </button>
+
+            <p class="text-secondary fs-5 mt-3 text-start">All trading involves risk Only risk capital you're prepared
+              to lose. this site is protected by reCAPTCHA Google Privacy Policy and Terms of Service Apply.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+
+  <!--<footer class="bg-light-grey mt-5">-->
+  <footer class="bg-light-grey mt-5 home-banner" > <!--LI: home-banner is a different background color-->
+    <div class="container-content p-5">
+      <div class="row g-5">
+        <div class="col-md-3">
+          <a href="#" class="navbar-brand">
+            <img src="img/Jade Poppin noM.svg" alt="logo Moola" class="img-fluid pb-2"
+              style="width: 6rem; margin-top: -2rem" />
+          </a>
+          <p class="light-grey-content fw-lighter">
+            Moola la plataforma social de inversión líder del mercado, ofrece
+            una amplia variedad de herramientas para invertir en mercados de
+            valores. Cree un portafolio con criptomonedas, acciones, materias
+            primas y ETF, entre otros
+          </p>
+          <p class="text-white fs-8 pt-5">ENCUÉNTRENOS EN</p>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-facebook facebook-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-instagram instagram-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-youtube youtube-hover"></i></a>
+          <a href="#" class="fs-5 me-3 text-white"><i class="bi bi-twitter twitter-hover"></i></a>
+          <a href="#" class="fs-5 text-white"><i class="bi bi-linkedin linkedin-hover"></i></a>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">
+            PRINCIPALES INSTRUMENTOS
+          </p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Bitcoin (BTC)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Ethereum (ETH)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acciones de Amazon</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acciones de Apple</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Oro (materia prima)</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Índice NSDQ100</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">SOBRE NOSOTROS</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Acerca de Moola</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Reseñas sobre Moola</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Oportunidades de empleo</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Nuestras oficinas</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Accesibilidad</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Impresión</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">ASISTENCIA TÉCNICA</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Centro de ayuda</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo realizar un depósito</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo realizar un retiro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo abrir una cuenta</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo verificar su cuenta</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Servicio de atención al cliente</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">
+            PRIVACIDAD Y REGLAMENTACIÓN
+          </p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Política de cookies de eToro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Política de privacidad</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Reglamentación y licencias</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Declaración general sobre riesgos</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Términos y condiciones</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Datos de reclamaciones de “Clientes de la
+                FCA”</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+
+        <div class="col-md-3">
+          <p class="light-grey-content fs-8 fw-light">MÁS INFORMACIÓN</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Cómo funciona el Copytrading</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Inversión responsable</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Evitar fraudes</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Qué es el apalancamiento y el margen</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Explicación para comprar y vender</a>
+            </li>
+          </ul>
+
+          <p class="light-grey-content fs-8 fw-light">SOCIOS Y PROMOCIONES</p>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Invite a un amigo</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Programa de afiliación</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">Club eToro</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-decoration-none fs-9 fw-300">CopyPortfolios de socios</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Col-md-3 -->
+      </div>
+      
+        <p>
+          Copyright &copy; 2022 Moola - All rights reserved.
+        </p>
+      </section>
+    </div>
+    <!-- Container -->
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script src="form.js"></script>
+  <script>
+
+    $('.slider').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        },
+
+        {
+          breakpoint: 780,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+  </script>
+
+</body>
+
+</html>
