@@ -6,12 +6,14 @@
   --primary: white;
   --dark-light: rgb(27, 28, 46);
   --box-body-slider: #ffffff;
+  --arrow: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 }
 
 .light-theme {
   --primary: black;
   --dark-light: white;
   --box-body-slider: rgba(0, 0, 0, 0.35);
+  --arrow: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .bg-themeA {
@@ -405,7 +407,6 @@ body {
 /*https://stackoverflow.com/questions/66567697/bootstrap-accordion-css-styling-when-active*/
 
 .accordion {
-  background-color: rgb(27, 28, 46);
   color: #00a86b;
   cursor: pointer;
   padding: 18px;
@@ -444,7 +445,7 @@ body {
 /*LI: modify Bootstrap Accordion CSS styling when active from default color */
 /*https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap*/
 .accordion-button:after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  background-image: var(--arrow) !important;
 }
 
 /*end LI*/
