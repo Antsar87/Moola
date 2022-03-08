@@ -29,14 +29,6 @@
   border-radius: 1rem;
 }
 
-.theme-switcher {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  border: none;
-  padding: 1rem;
-}
-
 /* Reset */
 *,
 *::after,
@@ -45,66 +37,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.light-grey {
-  color: #3a3d48;
-}
-
-.lighter-grey {
-  color: #a7a7a7;
-}
-
-/*LI: add custom white color for text*/
-.text-white-cs {
-  color: #ffffff;
-}
-
-/*LI: add custom black color for text*/
-.text-black-cs {
-  color: #000000;
-}
-
-.fs-13 {
-  font-size: 13px;
-}
-
-.fs-15 {
-  font-size: 15px;
-}
-
-.fw-200 {
-  font-weight: 200;
-}
-
-.fw-500 {
-  font-weight: 400;
-}
-
-/* .testing {
-  font-size: 62.5%;
-}
-
-.testing body {
-  font-size: 1.6rem;
-}
-
-.testing .navbar a,
-.testing .navbar button {
-  font-size: 1.6rem;
-}
-
-.testing .navbar a {
-  margin: 0 1rem;
-
-} */
-
-/* .testing .navbar .dropdown-item {
-  margin: 0;
-}
-
-.testing .navbar button {
-  font-size: 1.8rem;
-} */
 
 html {
   font-size: 62.5%;
@@ -163,6 +95,99 @@ body {
 
 .w-fix {
   width: 100%;
+}
+
+.theme-switcher img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.light-grey {
+  color: #3a3d48;
+}
+
+.lighter-grey {
+  color: #a7a7a7;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-500 {
+  font-weight: 400;
+}
+
+/* Font Weights */
+.fw-300 {
+  font-weight: 300;
+}
+
+/* Margin */
+.mt-10 {
+  margin-top: 10rem;
+}
+
+/* Font Sizes */
+.fs-9 {
+  font-size: 0.9rem;
+}
+
+.fs-sm-sm {
+  font-size: 1.2rem;
+}
+
+.fs-sm {
+  font-size: 1.4rem;
+}
+
+.fs-md {
+  font-size: 2.2rem;
+}
+
+.fs-md-big {
+  font-size: 2.4rem;
+}
+
+.fs-big {
+  font-size: 3.4rem;
+}
+
+.fs-8 {
+  font-size: 0.8rem;
+}
+
+.fs-085-em {
+  font-size: 0.85em;
+}
+
+.fs-2-em {
+  font-size: 2em;
+}
+
+/* Colors */
+.light-grey-content {
+  color: rgba(255, 255, 255, 0.5);
+}
+.text-white-medium {
+  color: rgba(255, 255, 255, 0.815);
+}
+
+/*LI: added Jade*/
+.text-jade {
+  color: #00a86b;
+}
+
+.links-color {
+  color: #3f9adc;
 }
 
 @media (min-width: 992px) {
@@ -224,15 +249,14 @@ body {
 
 /* Components */
 
-/*.btnA {
+.theme-switcher {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
   border: none;
-  padding: 1rem 3rem;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 1.8rem;
-  display: inline-block;
-  text-decoration: none;
-}*/
+  border-radius: 50%;
+  padding: 0.6rem 1rem 1rem 1rem;
+}
 
 /*LI*/
 .btnA {
@@ -581,70 +605,6 @@ body {
 .container-content {
   max-width: 1090px;
   margin: auto;
-}
-
-/* Font Weights */
-.fw-300 {
-  font-weight: 300;
-}
-
-/* Margin */
-.mt-10 {
-  margin-top: 10rem;
-}
-
-/* Font Sizes */
-.fs-9 {
-  font-size: 0.9rem;
-}
-
-.fs-sm-sm {
-  font-size: 1.2rem;
-}
-
-.fs-sm {
-  font-size: 1.4rem;
-}
-
-.fs-md {
-  font-size: 2.2rem;
-}
-
-.fs-md-big {
-  font-size: 2.4rem;
-}
-
-.fs-big {
-  font-size: 3.4rem;
-}
-
-.fs-8 {
-  font-size: 0.8rem;
-}
-
-.fs-085-em {
-  font-size: 0.85em;
-}
-
-.fs-2-em {
-  font-size: 2em;
-}
-
-/* Colors */
-.light-grey-content {
-  color: rgba(255, 255, 255, 0.5);
-}
-.text-white-medium {
-  color: rgba(255, 255, 255, 0.815);
-}
-
-/*LI: added Jade*/
-.text-jade {
-  color: #00a86b;
-}
-
-.links-color {
-  color: #3f9adc;
 }
 
 /* Backgrounds */
@@ -1068,17 +1028,6 @@ body {
     /* align-self: flex-start !important; */
     padding-top: 0%;
     width: 100% !important;
-  }
-
-  .home-moola-header-h3 {
-    /* padding-right: 50px; */
-    /* width: 88%; */
-    /* font-size: 1.5rem !important; */
-  }
-
-  .home-moola-header-h2 {
-    /* width: 88% !important; */
-    /* font-size: 2rem; */
   }
 }
 
