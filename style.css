@@ -419,7 +419,7 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-  color: rgb(27, 28, 46) !important;
+  color: var(--dark-light) !important;
   background-color: #00a86b !important;
 }
 
@@ -428,7 +428,7 @@ body {
 .accordion-button:hover,
 .accordion-button:active {
   background-color: #00a86b !important;
-  color: rgb(27, 28, 46) !important;
+  color: var(--dark-light) !important;
   text-decoration: none !important;
   border: hidden !important;
   border-color: #00a86b !important;
