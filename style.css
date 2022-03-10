@@ -52,6 +52,9 @@ body {
 /* Reset */
 
 /* utilities */
+.mx-100 {
+  max-width: 100% !important;
+}
 
 .containerA {
   max-width: 1200px;
