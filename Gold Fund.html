@@ -1,250 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-  <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="magicslideshow/magicslideshow.css"
+    />
+    <script
+      src="magicslideshow/magicslideshow.js"
+      type="text/javascript"
+    ></script>
 
+    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css" />
+    <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="magicslideshow/magicslideshow.css"/>
-  <script src="magicslideshow/magicslideshow.js" type="text/javascript"></script>
+    <script
+      src="https://kit.fontawesome.com/871e8a7152.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/switcher.js" defer></script>
 
-  <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
-  <script type="text/javascript" src="magicscroll/magicscroll.js"></script> 
+    <title>Inflation Fund</title>
+    <style>
+      .slick-prev:before {
+        content: '<';
+        font-size: 30px;
+      }
 
-  <script src="https://kit.fontawesome.com/871e8a7152.js" crossorigin="anonymous"></script>
-  <script src="/switcher.js" defer></script>
+      .slick-next:before {
+        content: '>';
+        font-size: 30px;
+      }
 
+      .slick-arrow {
+        border: none;
+        /*background-color: rgba(0, 0, 0, 0.35);*/
+        background-color: rgba(51, 170, 51, 0.2);
+        z-index: 1;
+        padding: 15px;
+        color: #00a86b;
+      }
 
-  <title>Inflation Fund</title>
-  <style>
-    .slick-prev:before {
-      content: "<";
-      font-size: 30px;
-    }
+      .slick-next {
+        margin-left: -30px !important;
+      }
 
-    .slick-next:before {
-      content: ">";
-      font-size: 30px;
-    }
+      .slick-prev {
+        margin-right: -30px !important;
+      }
 
-    .slick-arrow {
-      border: none;
-      /*background-color: rgba(0, 0, 0, 0.35);*/
-      background-color: rgba(51, 170, 51, .2) ;
-      z-index: 1;
-      padding: 15px;
-      color: #00a86b;
-    }
+      .slick-next,
+      .slick-prev {
+        font-size: 0;
+        height: 70px;
+        margin: auto 0;
+      }
 
-    .slick-next {
-      margin-left: -30px !important;
-    }
+      /*LI https://www.tutorialsplane.com/bootstrap-change-dropdown-menu-background-color/*/
+      .change-dropdown-menu {
+        background-color: rgb(27, 28, 46);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-style: none;
+        border-radius: 1rem;
+      }
 
-    .slick-prev {
-      margin-right: -30px !important;
-  
-    }
-
-
-    .slick-next,
-    .slick-prev {
-      font-size: 0;
-      height: 70px;
-      margin: auto 0;
-    }
-
-    /*LI https://www.tutorialsplane.com/bootstrap-change-dropdown-menu-background-color/*/
-    .change-dropdown-menu {
-    background-color: rgb(27, 28, 46);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-style: none;
-    border-radius: 1rem;
-
-        }
-
-        .dropdown-menu {
+      .dropdown-menu {
         width: 200px !important;
-    }
+      }
 
+      /*LI add margin to left of*/
+      .navbar .navbar-brand {
+        margin-left: 5% !important;
+      }
 
-    /*LI add margin to left of*/
-    .navbar .navbar-brand{
-    margin-left:5% !important;
-
-    }
-
-
-    .MagicSlideshow.mss-horizontal .mss-slider .mss-arrow-prev:before,
-    .MagicSlideshow.mss-horizontal .mss-slider .mss-arrow-next:before {
+      .MagicSlideshow.mss-horizontal .mss-slider .mss-arrow-prev:before,
+      .MagicSlideshow.mss-horizontal .mss-slider .mss-arrow-next:before {
         border-color: #00a86b !important;
-    }
+      }
+    </style>
+  </head>
 
+  <body class="">
+    <!------------------------------------------------------------------------------------------------>
+    <!------------------------------------------- Button  ----------------------------------------->
+    <!------------------------------------------------------------------------------------------------>
+    <button class="theme-switcher">switcher</button>
+    <!------------------------------------------------------------------------------------------------>
+    <!------------------------------------------- Button  ----------------------------------------->
+    <!------------------------------------------------------------------------------------------------>
 
+    <!------------------------------------------------------------------------------------------------>
+    <!------------------------------------------- MENU  ----------------------------------------->
+    <!------------------------------------------------------------------------------------------------>
 
-  </style>
-</head>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-back sticky-top " style="background-color: rgb(27, 28, 46);">-->
+    <nav class="navbar navbar-expand-lg bg-themeA sticky-top"></nav>
 
-<body class="">
-
-<!------------------------------------------------------------------------------------------------>
-  <!------------------------------------------- Button  ----------------------------------------->
-<!------------------------------------------------------------------------------------------------>
-<button class="theme-switcher">
-  switcher
- </button>
-<!------------------------------------------------------------------------------------------------>
-  <!------------------------------------------- Button  ----------------------------------------->
-<!------------------------------------------------------------------------------------------------>
-
-
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------------------- MENU  ----------------------------------------->
-<!------------------------------------------------------------------------------------------------>
-
-  <!-- <nav class="navbar navbar-expand-lg navbar-dark navbar-back sticky-top " style="background-color: rgb(27, 28, 46);">-->
-    <nav class="navbar navbar-expand-lg bg-themeA  sticky-top ">
-      <div class="container-fluid">
-
-      <a class="navbar-brand" href="index.html">
-          <img src="img/Jade.svg" alt="" width="72" height="76" class="d-inline-block align-text-top" />
-      </a>
-
-      <a href="index.html" class="nav-link mt-4 c-themeA" style="font-size:28px">
-      Moola
-    </a>
-
-        <button class="navbar-toggler my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Moola</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-
-        
-          <div class="offcanvas-body">
-
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 pt-4"><!--LI" pt-4 moves list down-->
-             
-
-              <li class="nav-item dropdown me-3 menu-i-hov">
-                <a class="nav-link c-themeA"  href="#" id="offcanvasNavbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
-                </a>
-                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
-                  <ul class="dropdown-menu mt-3 py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="Inflation Fund.html">Crypto Inflation Fund</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="Winter Fund.html">Crypto Winter Fund</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="Gold Fund.html">Crypto Gold Fund</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="Tech Fund.html">Crypto Tech Fund</a>
-                  </li>
-                </ul>
-              </li>
-    
-              <li class="nav-item dropdown me-3 menu-i-hov">
-                <a class="nav-link c-themeA"  href="#" id="offcanvasNavbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Technology
-                </a>
-                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
-                  <ul class="dropdown-menu mt-3 py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="trading.html">Moola Platform</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="platforms.html">Moola Protocol</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="demo.html">Blockchain</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="demo.html">Security</a>
-                  </li>
-                </ul>
-              </li>
-  
-              <li class="nav-item dropdown me-3 menu-i-hov">
-                <a class="nav-link c-themeA"  href="#" id="offcanvasNavbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Company
-                </a>
-                <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
-                  <ul class="dropdown-menu mt-3 py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="trading.html">About us</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="platforms.html">Strategies</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item py-2 fs-4 c-themeA" href="demo.html">Investing</a>
-                  </li>
-                </ul>
-              </li>
-  
-              <li class="nav-item me-3 menu-i-hov">
-                <a class="nav-link" href="#"></a>
-              </li>
-  
-              <li class="nav-item me-3 menu-i-hov">
-                <a class="nav-link" href="#"></a>
-              </li>
-  
-              <li class="nav-item me-3 menu-i-hov">
-                <a class="nav-link ms-2" style="color: #00a86b" href="#">Log in</a><!--LI: changed color-->
-              </li>
-  
-  
-            </ul>
-  
-            <button class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold me-5 mt-4" type="submit"
-              style="height: 40px;margin-top: 2.5rem !important;"><!--LI: me-5 moves button to left-->
-              Sign Up
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-<!------------------------------------------- END MENU  -------------------------------------------->
-
-
+    <!------------------------------------------- END MENU  -------------------------------------------->
 
     <!-- the header begins here -->
     <div class="container-fluid">
       <div class="container-xxl">
         <div class="row overflow-hidden trading-header">
-
           <div class="col-lg-6 py-5 c-themeA">
             <!--<p class="text-uppercase "> <span href="index.html" class="border-bottom border-3 ">Home</span> / <span class="border-bottom border-3">Products</span> / Inflation-Protected Fund</p>-->
-            <h2 class="text-uppercase fs-sm-sm" style="margin-bottom: 5rem !important;"> <a href="index.html" class="c-themeA py-5 ">Home</a> / <a href="trading.html" class="c-themeA py-5">Products</a> / Crypto Gold Fund</h2>
-
+            <h2
+              class="text-uppercase fs-sm-sm"
+              style="margin-bottom: 5rem !important"
+            >
+              <a href="index.html" class="c-themeA py-5">Home</a> /
+              <a href="trading.html" class="c-themeA py-5">Products</a> / Crypto
+              Gold Fund
+            </h2>
 
             <h2 class="display-4 fw-bold">A Better way to invest in gold.</h2>
 
             <p class="fs-2">
-              On Moola, you can invest in funds and ETFs that track gold-backed futures contracts.
+              On Moola, you can invest in funds and ETFs that track gold-backed
+              futures contracts.
             </p>
 
-            <div class="row mx-auto text-center mx-lg-0 mt-4 g-0" style="max-width: 500px;margin-top: 5rem !important">
+            <div
+              class="row mx-auto text-center mx-lg-0 mt-4 g-0"
+              style="max-width: 500px; margin-top: 5rem !important"
+            >
               <div class="col-4">
                 <div style="height: 80px">
                   <img
@@ -285,8 +183,6 @@
                 </div>
               </div>
             </div>
-
-
           </div>
           <!-- second flex -->
           <div class="d-none d-lg-block col-lg-6 py-5">
@@ -305,21 +201,19 @@
       <!----------------------------------- STRATEGY ------------------------------------------>
 
       <div class="row mt-10">
-  
         <div class="col-lg-6 text-center text-lg-start c-themeA">
           <h3 class="fw-bolder mb-0 fs-1">Strategy</h3>
           <p class="fs-2 mt-4">
-            Moola Crypto Gold Fund adopts a speculative strategy in gold. 
+            Moola Crypto Gold Fund adopts a speculative strategy in gold.
           </p>
 
           <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
             Start Investing
           </button>
-
         </div>
-  
+
         <div class="col-lg-6">
-             <div
+          <div
             id="carouselExampleControlsNoTouching"
             class="carousel slide"
             data-bs-ride="carousel"
@@ -328,25 +222,26 @@
               <div class="carousel-item active" data-bs-interval="5000">
                 <div
                   class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded bg-themeA c-themeA"
-                  
                 >
-                  <div class="card-header bg-transparent border-transparent ">
+                  <div class="card-header bg-transparent border-transparent">
                     Example: investing in gold futures
                   </div>
                   <div class="card-body">
                     <p class="card-text">
                       <!--https://www.calculatorsoup.com/calculators/financial/investment-inflation-calculator.php-->
-                      With 10% crypto annual return rate you would invest $905.21 today
-                      to have a value in 1 year of $1,000.00 in today's dollars. 
+                      With 10% crypto annual return rate you would invest
+                      $905.21 today to have a value in 1 year of $1,000.00 in
+                      today's dollars.
                     </p>
                   </div>
-                  <div class="card-footer bg-transparent border-transparent fs-5">
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
                     Moola replicates the performance of gold.
                   </div>
-           
                 </div>
               </div>
-             <!--<div class="carousel-item" data-bs-interval="5000">
+              <!--<div class="carousel-item" data-bs-interval="5000">
                 <div
                   class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded"
                   style="background-color: rgb(27, 28, 46);color:#FFFFFF;"
@@ -386,24 +281,25 @@
                 </div>
               </div>-->
             </div>
-            
           </div>
 
-          <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
+          <a
+            class="text-center mt-2 d-block text-decoration-none fs-5"
+            href="#"
+            style="color: #00a86b"
             >See Fund's investments</a
           >
         </div>
-
       </div>
 
       <!----------------------------------- FUND ------------------------------------------>
       <div class="row mt-10">
-  
         <div class="col-lg-6 text-center text-lg-start order-lg-1 c-themeA">
           <h3 class="fw-bolder mb-0 fs-1">Crypto Gold ETF</h3>
-      
+
           <p class="fs-2 mt-4">
-            Moola Crypto Gold ETF is an indexing investment approach tracking the Moola Crypto Gold index.
+            Moola Crypto Gold ETF is an indexing investment approach tracking
+            the Moola Crypto Gold index.
           </p>
 
           <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
@@ -422,20 +318,22 @@
                 <div
                   class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded bg-themeA c-themeA"
                 >
-
                   <div class="card-header bg-transparent border-transparent">
                     Fund's target
                   </div>
                   <div class="card-body">
                     <!--<h5 class="card-title">Success card title</h5>-->
                     <p class="card-text">
-                      The Fund's objective is to make money when gold price goes up.
+                      The Fund's objective is to make money when gold price goes
+                      up.
                     </p>
                   </div>
-                  <div class="card-footer bg-transparent border-transparent fs-5">
-                    Fund's return is provided by the performance of Gold futures.
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
+                    Fund's return is provided by the performance of Gold
+                    futures.
                   </div>
-
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="5000">
@@ -448,11 +346,14 @@
                   <div class="card-body">
                     <!--<h5 class="card-title">Success card title</h5>-->
                     <p class="card-text">
-                      The Fund invests by sampling the index, meaning that it holds a broadly 
-                      diversified collection of assets that, in the aggregate, approximates the Gold futures.
+                      The Fund invests by sampling the index, meaning that it
+                      holds a broadly diversified collection of assets that, in
+                      the aggregate, approximates the Gold futures.
                     </p>
                   </div>
-                  <div class="card-footer bg-transparent border-transparent fs-5">
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
                     The fund invests by tracking the Gold futures.
                   </div>
                 </div>
@@ -470,144 +371,158 @@
                       The Fund invests in a basket of Tokenized Gold Futures.
                     </p>
                   </div>
-                  <div class="card-footer bg-transparent border-transparent fs-5">
-                    The Fund invests in different assets, so it is fully diversified.
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
+                    The Fund invests in different assets, so it is fully
+                    diversified.
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
 
-          <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
+          <a
+            class="text-center mt-2 d-block text-decoration-none fs-5"
+            href="#"
+            style="color: #00a86b"
             >Learn about ETFs</a
           >
         </div>
-
       </div>
-    <!----------------------------------- How to invest ------------------------------------------>
-    <div class="row mt-10">
-  
-      <div class="col-lg-6 text-center text-lg-start c-themeA">
-        <h3 class="fw-bolder mb-0 fs-1">How to invest</h3>
-        <p class="fs-2 mt-4">
-          Buying shares of the Fund will give you exposure to the index and from it to all its underlying assets.
-        </p>
+      <!----------------------------------- How to invest ------------------------------------------>
+      <div class="row mt-10">
+        <div class="col-lg-6 text-center text-lg-start c-themeA">
+          <h3 class="fw-bolder mb-0 fs-1">How to invest</h3>
+          <p class="fs-2 mt-4">
+            Buying shares of the Fund will give you exposure to the index and
+            from it to all its underlying assets.
+          </p>
 
-        <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
-          Sign up
-        </button>
+          <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">Sign up</button>
+        </div>
 
-      </div>
-
-      <div class="col-lg-6">
-           <div
-          id="carouselExampleControlsNoTouching"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <div
-                class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded bg-themeA c-themeA"
-              >
-                <div class="card-header bg-transparent border-transparent">
-                  Diversification
-                </div>
-                <div class="card-body">
-                  <!--<h5 class="card-title">Inflation Risk</h5>-->
-                  <p class="card-text">
-                    When you buy a fund, you may be buying a share of dozens of investments.
-                  </p>
-                </div>
-                <div class="card-footer bg-transparent border-transparent fs-5">
-                  Diversification protects your investments from volatility and concentration risk.
-                </div>
-         
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <div
-                class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded c-themeA bg-themeA"
-              >
-                <div class="card-header bg-transparent border-transparent">
-                  Flexibility
-                </div>
-                <div class="card-body">
-
-                  <p class="card-text">
-                    When you sell, your proceeds are typically added to your account the next day.
-                  </p>
-                </div>
-                <div class="card-footer bg-transparent border-transparent fs-5">
-                  You have full control on your investments and can liquidita them at any point in time.
+        <div class="col-lg-6">
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div
+                  class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded bg-themeA c-themeA"
+                >
+                  <div class="card-header bg-transparent border-transparent">
+                    Diversification
+                  </div>
+                  <div class="card-body">
+                    <!--<h5 class="card-title">Inflation Risk</h5>-->
+                    <p class="card-text">
+                      When you buy a fund, you may be buying a share of dozens
+                      of investments.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
+                    Diversification protects your investments from volatility
+                    and concentration risk.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <div
-                class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded bg-themeA c-themeA"
-              >
-                <div class="card-header bg-transparent border-transparent">
-                  Trading
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded c-themeA bg-themeA"
+                >
+                  <div class="card-header bg-transparent border-transparent">
+                    Flexibility
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      When you sell, your proceeds are typically added to your
+                      account the next day.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
+                    You have full control on your investments and can liquidita
+                    them at any point in time.
+                  </div>
                 </div>
-                <div class="card-body">
-                  <!--<h5 class="card-title">DeFi and stablecoins</h5>-->
-                  <p class="card-text">
-                    Because they’re traded on major exchanges, they’re typically as easy as stocks to buy and sell.
-                  </p>
-                </div>
-                <div class="card-footer bg-transparent border-transparent fs-5">
-                 ETF are tradable like stocks, tokens and crypto. You can profit by trading the fund.
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div
+                  class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded bg-themeA c-themeA"
+                >
+                  <div class="card-header bg-transparent border-transparent">
+                    Trading
+                  </div>
+                  <div class="card-body">
+                    <!--<h5 class="card-title">DeFi and stablecoins</h5>-->
+                    <p class="card-text">
+                      Because they’re traded on major exchanges, they’re
+                      typically as easy as stocks to buy and sell.
+                    </p>
+                  </div>
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
+                    ETF are tradable like stocks, tokens and crypto. You can
+                    profit by trading the fund.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          
-        </div>
 
-        <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
-          >Lean how to open an account</a
-        >
+          <a
+            class="text-center mt-2 d-block text-decoration-none fs-5"
+            href="#"
+            style="color: #00a86b"
+            >Lean how to open an account</a
+          >
+        </div>
       </div>
 
-    </div>
+      <!----------------------------------- Future ------------------------------------------>
 
-    <!----------------------------------- Future ------------------------------------------>
+      <div
+        class="get-to-know mt-10 d-none d-lg-block text-center text-white-cs"
+      >
+        <div class="w-50 mx-auto pt-3">
+          <h2 class="pt-3">
+            You want to invest in Gold but don't want the hassle of phsyical
+            custody and the risk of trading with CFD?
+          </h2>
+          <p>
+            Gold price is widely followed in financial markets around the world.
+            Gold was the basis of economic capitalism for hundreds of years
+            until the repeal of the Gold standard. Today, Gold offers many
+            speculative opportunities in particular during periods of economic
+            downturn, uncertainty and crisis.
+          </p>
+        </div>
+      </div>
 
-   <div
-   class="get-to-know mt-10 d-none d-lg-block text-center text-white-cs"
-   
- >
-   <div class="w-50 mx-auto pt-3">
-     <h2 class="pt-3">You want to invest in Gold but don't want the hassle of phsyical custody and the risk of trading with CFD?</h2>
-     <p>
-      Gold price is widely followed in financial markets around the world. Gold was the basis of economic capitalism for 
-      hundreds of years until the repeal of the Gold standard. Today, Gold offers many speculative opportunities in particular 
-      during periods of economic downturn, uncertainty and crisis.
-     </p>
-   </div>
- </div>
-
-
-    <!----------------------------------- Fees ------------------------------------------>
+      <!----------------------------------- Fees ------------------------------------------>
 
       <div class="row mt-10">
-
         <div class="col-lg-6 text-center text-lg-start order-lg-1 c-themeA">
           <h3 class="fw-bolder mb-0 fs-1">Fees and Expenses</h3>
-         
+
           <p class="fs-2 mt-4">
-            The Fund has very low operating expenses. To build an equivalent portfolio would cost significantly more.
-            
-            The following table describes the fees and expenses you may pay if you buy, 
-            hold, and sell shares of the Fund. The Total Annual Fund Operating Expenses is 1%.
+            The Fund has very low operating expenses. To build an equivalent
+            portfolio would cost significantly more. The following table
+            describes the fees and expenses you may pay if you buy, hold, and
+            sell shares of the Fund. The Total Annual Fund Operating Expenses is
+            1%.
           </p>
 
           <button class="btnA btn-greenA px-4 py-2 mb-3 mt-3">
             Start Trading ETFs
           </button>
-
         </div>
 
         <div class="col-lg-6">
@@ -621,19 +536,17 @@
                 <div
                   class="card border-transparent w-75 mx-auto shadow-lg mb-4 rounded c-themeA bg-themeA"
                 >
-
                   <div class="card-header bg-transparent border-transparent">
-                    Expense ratio 
+                    Expense ratio
                   </div>
                   <div class="card-body">
-                    <p class="card-text">
-                      1%
-                    </p>
+                    <p class="card-text">1%</p>
                   </div>
-                  <div class="card-footer bg-transparent border-transparent fs-5">
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
                     Very low expenses when you buy, hold or sell the Fund.
                   </div>
-
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="5000">
@@ -644,11 +557,11 @@
                     Management Fees
                   </div>
                   <div class="card-body">
-                    <p class="card-text">
-                    0%
-                    </p>
+                    <p class="card-text">0%</p>
                   </div>
-                  <div class="card-footer bg-transparent border-transparent fs-5">
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
                     Zero costs.
                   </div>
                 </div>
@@ -661,31 +574,30 @@
                     Distribution, advertising and promotion expenses
                   </div>
                   <div class="card-body">
-                    <p class="card-text">
-                    0%
-                    </p>
+                    <p class="card-text">0%</p>
                   </div>
-                  <div class="card-footer bg-transparent border-transparent fs-5">
+                  <div
+                    class="card-footer bg-transparent border-transparent fs-5"
+                  >
                     Zero marketing fees.
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
 
-          <a class="text-center mt-2 d-block text-decoration-none fs-5" href="#" style="color: #00a86b"
+          <a
+            class="text-center mt-2 d-block text-decoration-none fs-5"
+            href="#"
+            style="color: #00a86b"
             >See All ETFs</a
           >
         </div>
-
       </div>
-
     </div>
 
     <!----------------------------------- FAQ ------------------------------------------>
 
- 
     <section class="faq mt-10 pt-5">
       <h2 class="fw-700A txt-center text-white-cs">FAQ</h2>
 
@@ -712,8 +624,9 @@
             >
               <div class="accordion-body">
                 <p>
-                  Indexing seeks to match, rather than outperform, 
-                  the return and risk characteristics of the index, by holding the assets that make up the index. 
+                  Indexing seeks to match, rather than outperform, the return
+                  and risk characteristics of the index, by holding the assets
+                  that make up the index.
                 </p>
               </div>
             </div>
@@ -739,7 +652,7 @@
             >
               <div class="accordion-body">
                 <p>
-                  A strategy is the approach to investing based off your goals, 
+                  A strategy is the approach to investing based off your goals,
                   risk tolerance, and time horizon.
                 </p>
               </div>
@@ -765,9 +678,12 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                <p>The expense ratio is determined by dividing a fund's operating expenses by the average 
-                  dollar value of its assets under management. It measures how much of a fund's assets are 
-                  used for administrative and other operating expenses.  </p>
+                <p>
+                  The expense ratio is determined by dividing a fund's operating
+                  expenses by the average dollar value of its assets under
+                  management. It measures how much of a fund's assets are used
+                  for administrative and other operating expenses.
+                </p>
               </div>
             </div>
           </div>
@@ -781,7 +697,7 @@
                 aria-expanded="false"
                 aria-controls="i43"
               >
-              Purchase and Sale of Fund Shares
+                Purchase and Sale of Fund Shares
               </button>
             </h2>
             <div
@@ -792,14 +708,17 @@
             >
               <div class="accordion-body">
                 <p>
-                  ETF Shares may only be bought and sold in the secondary market through a brokerage firm. 
-                  The price you pay or receive for ETF Shares will be the prevailing market price, which may 
-                  be more (premium) or less (discount) than the NAV of the shares. 
-                  There is no minimum dollar amount you must invest and no minimum number of shares you must buy. 
-                  An investor may incur costs attributable to the difference between the highest price a buyer is willing 
-                  to pay to purchase ETF Shares (bid) and the lowest price a seller is willing to accept for ETF Shares 
-                  (ask) when buying or selling shares in the secondary market (bid-ask spread).
-                  
+                  ETF Shares may only be bought and sold in the secondary market
+                  through a brokerage firm. The price you pay or receive for ETF
+                  Shares will be the prevailing market price, which may be more
+                  (premium) or less (discount) than the NAV of the shares. There
+                  is no minimum dollar amount you must invest and no minimum
+                  number of shares you must buy. An investor may incur costs
+                  attributable to the difference between the highest price a
+                  buyer is willing to pay to purchase ETF Shares (bid) and the
+                  lowest price a seller is willing to accept for ETF Shares
+                  (ask) when buying or selling shares in the secondary market
+                  (bid-ask spread).
                 </p>
               </div>
             </div>
@@ -813,9 +732,8 @@
                 data-bs-target="#i53"
                 aria-expanded="false"
                 aria-controls="i53"
-               
               >
-              Fees and Expenses Example
+                Fees and Expenses Example
               </button>
             </h2>
             <div
@@ -826,31 +744,25 @@
             >
               <div class="accordion-body">
                 <p>
-                  The following example illustrates the hypothetical expenses that you would incur over various 
-                  periods if you were to invest $10,000 in the Fund’s shares. This example assumes that the shares 
-                  provide a return of 5% each year and that total annual fund operating expenses remain as stated in 
-                  the preceding table. The hypothetical expenses would be: 
+                  The following example illustrates the hypothetical expenses
+                  that you would incur over various periods if you were to
+                  invest $10,000 in the Fund’s shares. This example assumes that
+                  the shares provide a return of 5% each year and that total
+                  annual fund operating expenses remain as stated in the
+                  preceding table. The hypothetical expenses would be:
                 </p>
                 <ol>
                   <li>
-                    <p>
-                      $105, 1 year
-                    </p>
+                    <p>$105, 1 year</p>
                   </li>
                   <li>
-                    <p>
-                      $331, 3 years
-                    </p>
+                    <p>$331, 3 years</p>
                   </li>
                   <li>
-                    <p>
-                      $580, 5 years
-                    </p>
+                    <p>$580, 5 years</p>
                   </li>
                   <li>
-                    <p>
-                      $1,321, 10 years
-                    </p>
+                    <p>$1,321, 10 years</p>
                   </li>
                 </ol>
               </div>
@@ -862,115 +774,15 @@
     <!-- faq -->
     <!-- end of tenth section after the header -->
 
-  
-<!------------------------------------------------------------------------------------------------>
-<!------------------------------------------- FOOTER ----------------------------------------->
-<!------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------>
+    <!------------------------------------------- FOOTER ----------------------------------------->
+    <!------------------------------------------------------------------------------------------------>
 
+    <footer class="mt-5 footer"></footer>
+    <!------------------------------------------- END FOOTER  ----------------------------------------->
 
-
-<footer class="mt-5" > 
-  <div class="container-content p-5">
-    <div class="row g-5">
-      <div class="col-md-3">
-        <a href="#" class="navbar-brand">
-          <img src="img/Jade.svg" alt="logo Moola" class="img-fluid pb-2"
-            style="width: 4rem; margin-top: -2rem" />
-        </a>
-        <p class="paragraph c-themeA"><span class="text-span-2"><span class="animate-charcter">Moola</span> </span> <br>The Power to invest.<br></p>
-
-        <p class="c-themeA fw-lighter">
-          Moola is the online platform for funds and ETFs investing in crypto, stocks, gold and Decentralized Finance.
-        </p>
-        <p class="c-themeA fs-8 pt-5">Find us on</p>
-        <a href="#" class="fs-5 me-3 c-themeA"><i class="bi bi-facebook facebook-hover"></i></a>
-        <a href="#" class="fs-5 me-3 c-themeA"><i class="bi bi-instagram instagram-hover"></i></a>
-        <a href="#" class="fs-5 me-3 c-themeA"><i class="bi bi-youtube youtube-hover"></i></a>
-        <a href="#" class="fs-5 me-3 c-themeA"><i class="bi bi-twitter twitter-hover"></i></a>
-        <a href="#" class="fs-5 c-themeA"><i class="bi bi-linkedin linkedin-hover"></i></a>
-      </div>
-      <!-- Col-md-3 -->
-
-      <div class="col-md-3">
-        <p class="c-themeA fs-10 fw-light">
-          Products
-        </p>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Inflation-Protected Fund</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Crypto-Winter Fund</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Xtra Gold Fund</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Crypto-Tech Fund</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Growth ETF</a>
-          </li>
-
-        </ul>
-
-      </div>
-      <!-- Col-md-3 -->
-
-      <div class="col-md-3">
-
-        <p class="c-themeA fs-10 fw-light">Technology</p>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Moola Platform</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Moola Protocol</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Blockchain</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Security</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Col-md-3 -->
-
-      <div class="col-md-3">
-        <p class="c-themeA fs-10 fw-light">
-          Company
-        </p>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">About us</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Strategies</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Investing</a>
-          </li>
-          <li>
-            <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Governance</a>
-          </li>
-
-        </ul>
-
-
-      </div>
-      <!-- Col-md-3 -->
-    </div>
-    
-      <p>
-        Copyright &copy; 2022 Moola - All rights reserved.
-      </p>
-    </section>
-  </div>
-  <!-- Container -->
-</footer>
-<!------------------------------------------- END FOOTER  ----------------------------------------->
+    <script src="footer.js"></script>
+    <script src="navbar.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

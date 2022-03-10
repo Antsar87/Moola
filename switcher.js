@@ -12,6 +12,8 @@ const moon = () => {
 if (localStorage.getItem('theme') === 'light') {
   body.classList.add('light-theme');
   moon();
+}else {
+  switcher.innerHTML = "<img src='img/sun-solid.svg' />";
 }
 
 if (localStorage.getItem('theme') === 'dark') {
