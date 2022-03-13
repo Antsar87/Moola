@@ -1,23 +1,10 @@
 const switcher = document.querySelector('.theme-switcher');
 const body = document.querySelector('body');
-
-const sun = () => {
-  switcher.innerHTML = "<img src='img/sun-solid.svg' />";
-};
-
-const moon = () => {
-  switcher.innerHTML = "<img src='img/moon-solid.svg' />";
-};
+const checkBox = document.querySelector('#checkbox');
 
 if (localStorage.getItem('theme') === 'light') {
   body.classList.add('light-theme');
-  moon();
-}else {
-  switcher.innerHTML = "<img src='img/sun-solid.svg' />";
-}
-
-if (localStorage.getItem('theme') === 'dark') {
-  sun();
+  checkBox.checked;
 }
 
 switcher.addEventListener('click', () => {

@@ -11,6 +11,7 @@ nav.innerHTML = `
 Moola
 </a>
 
+
   <button class="navbar-toggler my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
     aria-controls="offcanvasNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -25,7 +26,7 @@ Moola
   
     <div class="offcanvas-body">
 
-      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 pt-4"><!--LI" pt-4 moves list down-->
+      <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 pt-4"><!--LI" pt-4 moves list down-->
        
 
         <li class="nav-item dropdown me-3 menu-i-hov">
@@ -103,15 +104,31 @@ Moola
           <a class="nav-link ms-2" style="color: #00a86b" href="#">Log in</a><!--LI: changed color-->
         </li>
 
+  
+       <li class="nav-item">
+       <a href="signUp.html">
+       <button  class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold me-5 " type="submit"
+       style="height: 40px; !important;"><!--LI: me-5 moves button to left-->
+       Sign Up
+   </button>
+     </a>
+       </li>
 
+       <li >
+       <div >
+         <input type="checkbox" class="checkbox" id="checkbox">
+         <label for="checkbox" class="label theme-switcher">
+         <i class="fas fa-moon"></i>
+         <i class='fas fa-sun'></i>
+       <div class='ball'></div>
+         </label>
+       </div>
+       </li> 
       </ul>
 
-      <a href="signUp.html">
-        <button  class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold me-5 mt-4" type="submit"
-        style="height: 40px;margin-top: 2.5rem !important;"><!--LI: me-5 moves button to left-->
-        Sign Up
-    </button>
-      </a>
+
+
+     
     </div>
   </div>
 </div>
