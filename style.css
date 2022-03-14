@@ -615,6 +615,11 @@ body {
 }
 
 /* code Footer */
+/* footer */
+.footer ul > li a:hover {
+  color: var(--primary);
+}
+
 /* Container */
 .container-content {
   max-width: 1090px;
@@ -995,6 +1000,10 @@ body {
   #home-global-leader img {
     width: 150px;
   }
+}
+
+.dropdown-menu {
+  border: none;
 }
 
 /*LI: Bootstrap navbar dropdown with hover effect */
