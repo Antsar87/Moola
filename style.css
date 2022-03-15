@@ -401,13 +401,16 @@ body {
   text-align: center;
 }
 
+.confidenceA .contentA .info .box h3,
 .confidenceA .contentA .info .box h2 {
   margin: 3rem 0;
+}
+
+.confidenceA .contentA .info .box h2 {
   font-size: 2.4rem;
 }
 
 .confidenceA .contentA .info .box h3 {
-  margin: 3rem 0;
   font-size: 1.4rem;
 }
 
@@ -433,7 +436,8 @@ body {
   text-align: center;
 }
 
-.trade h2 {
+.trade h2,
+.faq h2 {
   font-size: 2.4rem;
 }
 
@@ -459,10 +463,6 @@ body {
 /* Trade */
 
 /* faq */
-.faq h2 {
-  font-size: 2.4rem;
-}
-
 .faq .contentA {
   margin-top: 5rem;
 }
@@ -677,7 +677,6 @@ body {
   font-weight: bolder;
   font-size: 4.5rem;
   margin-bottom: 3rem;
-
   font-size: 6.5rem;
   margin-bottom: 1rem;
 }
@@ -740,12 +739,10 @@ body {
 @media (min-width: 768px) {
   .platform-join-wrapper {
     transition: all 0.5s;
-    /*border: hsla(217, 12%, 71%, 0.301) solid 3px;*/ /*LI: change color*/
     border: #00a86b solid 1px;
   }
 
   .platform-join-wrapper:hover {
-    /*border: hsla(217, 12%, 71%, 0.747) solid 3px;*/ /*LI: change color*/
     border: #00a86b solid 2px;
   }
 
