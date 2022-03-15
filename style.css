@@ -56,9 +56,9 @@ body {
 /* Reset */
 
 /* utilities */
-@media (max-width: 980px){
+@media (max-width: 980px) {
   .mt-mdA-4 {
-    margin-top: 4rem;    
+    margin-top: 4rem;
   }
 }
 
@@ -250,10 +250,14 @@ body {
 .offcanvas {
   background: var(--dark-light);
 }
+
+.contentA {
+  max-width: 800px;
+  margin: 0 auto;
+}
 /* utilities */
 
 /* Components */
-
 
 /*LI*/
 .btnA {
@@ -310,6 +314,47 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.label {
+  width: 50px;
+  height: 26px;
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(-0.7);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
 /* Components */
 
 /* HeaderA */
@@ -318,7 +363,6 @@ body {
   background: url(/images/demo-account-mobile-bg.jpg) no-repeat center center /
     cover;
   height: 100vh;
-  color: white;
 }
 
 .headerA .contentA {
@@ -376,7 +420,6 @@ body {
 }
 
 .confidenceA .contentA .info .list.list-circle li::marker {
-  /*color: #6aac0e;*/
   color: #00a86b; /*LI: change color*/
 }
 
@@ -480,13 +523,6 @@ body {
 
 /*end LI*/
 
-/* faq */
-
-.contentA {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 /* Media */
 
 @media (min-width: 992px) {
@@ -571,40 +607,10 @@ body {
 }
 
 /* css of trading page */
-.market-moola {
-  background: rgb(27, 28, 46);
-}
-
 .get-to-know {
   background-image: url('../img/banner-bottom.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.menu-i-hov:hover {
-  background-color: #f1ecec;
-  background-color: #393e54;
-  background-color: transparent;
-}
-
-.menu-i-hov {
-  padding: 10px 0;
-}
-.navbar-back {
-  background-color: #ffffff;
-  background-color: rgb(27, 28, 46);
-  padding: 0 0;
-}
-
-/*LI" white navbar background*/
-.navbar-back-white {
-  background-color: #ffffff;
-  padding: 0 0;
-}
-
-.navbar-back-blue {
-  background-color: rgb(27, 28, 46);
-  padding: 0 0;
 }
 
 @media (min-width: 768px) {
@@ -624,12 +630,6 @@ body {
 .container-content {
   max-width: 1090px;
   margin: auto;
-}
-
-/* Backgrounds */
-.bg-light-grey {
-  background: #3d404a;
-  color: #f6f6f6;
 }
 
 /* Hover Links */
@@ -690,7 +690,6 @@ body {
 }
 
 .platform-header-1 a {
-  /* margin-bottom: 2rem; */
   color: rgb(184, 182, 182);
   text-transform: uppercase;
 }
@@ -700,19 +699,13 @@ body {
 .platform-join-wrapper {
   max-width: 370px;
   margin: 0 auto;
-  /* padding: 3rem 0; */
   margin-bottom: 3rem;
-  /* box-shadow: -2px 4px 10px -4px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -2px 4px 10px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: -2px 4px 10px -4px rgba(0,0,0,0.75); */
-  /* border: hsla(217, 12%, 71%, 0.301) solid 3px; */
   border: none;
 }
 
 .platform-join-wrapper a {
   padding: 0;
   display: block;
-  /* border: solid 2px blue; */
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -744,10 +737,6 @@ body {
   background-image: url('images/platform-6.svg');
 }
 
-.platform-join-text {
-  color: black;
-}
-
 @media (min-width: 768px) {
   .platform-join-wrapper {
     transition: all 0.5s;
@@ -773,27 +762,19 @@ body {
 /* platform-multi-asset */
 
 .platform-multi-asset {
-  /* border: 2px solid blue; */
   min-height: 560px;
 }
 
 .platform-carrousel {
-  /* height: 100px; */
-  /*background-color: #3f4653;*/
   background-color: #00a86b; /*LI: change color*/
 }
 
 .platform-carouse-icon-hover {
-  /*background-color: #444958;
-  border-bottom: 2px solid #00a5ee;
-  color: #00a5ee;*/
   background-color: #ffffff; /*LI: change color*/
   color: #00a86b;
 }
 
 .b-icon:hover {
-  /*background-color: #444958 !important;
-  color: #00a5ee !important;*/
   background-color: #ffffff !important; /*LI: change color*/
   color: #00a86b !important;
 }
@@ -802,7 +783,6 @@ body {
 /* code of home etoro */
 
 .home-moola-header {
-  /* background-image: url("images/header_bg_platform.jpg"); */
   background-image: url('//marketing.etorostatic.com/cache1/hp/v_242/images/hp_cover_202101/slider_top/slide_1_bg.jpg');
   background-position-x: center;
   background-position-y: center;
@@ -812,7 +792,6 @@ body {
 }
 
 .home-moola-header-cols {
-  /*padding-top: 15%;*/
   padding-top: 5%; /*Reduce padding*/
 }
 
@@ -835,7 +814,6 @@ body {
 }
 
 .home-moola-header-h3 {
-  /* padding-right: 50px; */
   width: 75%;
 }
 
@@ -853,11 +831,7 @@ body {
 
 /* from from home stylish */
 .modern-form {
-  /* width: 500px; */
-
   margin: 0 auto;
-  /* background-color:  #fff; */
-  /* border: solid 1px #ccc; */
   padding: 20px 10px;
 }
 
@@ -900,7 +874,6 @@ body {
 }
 .float-label-field.float label {
   opacity: 1;
-  /*top: -8px;*/
   top: -1px; /*LI: reduced top*/
   font-size: 45%;
   transition: all 0.2s ease;
@@ -911,7 +884,6 @@ body {
 .loginBtn {
   box-sizing: border-box;
   position: relative;
-  /* width: 13em;  - apply for fixed size */
   margin: 0.2em;
   padding: 0 15px 0 46px;
   border: none;
@@ -920,7 +892,6 @@ body {
   white-space: nowrap;
   border-radius: 0.2em;
   font-size: 16px;
-  color: #fff;
 }
 .loginBtn:before {
   content: '';
@@ -946,7 +917,6 @@ body {
 .loginBtn--facebook {
   background-color: #4c69ba;
   background-image: linear-gradient(#4c69ba, #3b55a0);
-  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
   text-shadow: 0 -1px 0 #354c8c;
 }
 .loginBtn--facebook:before {
@@ -962,7 +932,6 @@ body {
 
 /* Google */
 .loginBtn--google {
-  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
   background: #dd4b39;
 }
 .loginBtn--google:before {
@@ -1028,7 +997,7 @@ body {
 }
 
 /*end LI*/
-
+/* Home media */
 @media (max-height: 702px) {
   .home-moola-header-cols {
     /* align-self: flex-start !important; */
@@ -1048,7 +1017,6 @@ body {
 
 @media (max-height: 585px) {
   .home-moola-header-cols {
-    /* align-self: flex-start !important; */
     padding-top: 0%;
     width: 100% !important;
   }
@@ -1056,22 +1024,19 @@ body {
 
 @media (max-height: 420px) {
   .home-moola-header-cols {
-    /* align-self: flex-start !important; */
     padding-top: 0%;
     width: 100% !important;
   }
 
   .home-moola-header-h3 {
-    /* padding-right: 50px; */
-    /* width: 88%; */
     font-size: 1.5rem !important;
   }
 
   .home-moola-header-h2 {
-    /* width: 88% !important; */
     font-size: 2rem;
   }
 }
+/* Home media */
 
 /* Discover Section */
 
@@ -1221,17 +1186,14 @@ circle {
 }
 /*https://learnui.design/tools/data-color-picker.html#single*/
 .pie1 {
-  /*stroke:hsl(180,70%,30%);*/
   stroke: #036d54;
 }
 .pie2 {
-  /*stroke:hsl(180,70%,50%);*/
   stroke: #00956f;
   -webkit-animation-name: pie2;
   animation-name: pie2;
 }
 .pie3 {
-  /*stroke:hsl(180,70%,20%);*/
   stroke: #00be8a;
   -webkit-animation-name: pie3;
   animation-name: pie3;
@@ -1318,7 +1280,6 @@ circle {
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -1343,46 +1304,4 @@ circle {
 .square-transition {
   opacity: 1;
   transform: none;
-}
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.label {
-  width: 50px;
-  height: 26px;
-  background-color:#111;
-  display: flex;
-  border-radius:50px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  position: relative;
-  transform: scale(-.70);
-}
-
-.ball {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
-
-/*  target the elemenent after the label*/
-.checkbox:checked + .label .ball{
-  transform: translateX(24px);
-}
-
-.fa-moon {
-  color: pink;
-}
-
-.fa-sun {
-  color: yellow;
 }
