@@ -4,7 +4,7 @@ nav.innerHTML = `
 <div class="container-fluid">
 
 <a class="navbar-brand" href="index.html">
-    <img src="img/Jade.svg" alt="" width="72" height="76" class="d-inline-block align-text-top" />
+    <img src="img/Jade.svg" alt="logo" class="d-inline-block align-text-top" />
 </a>
 
 <a href="index.html" class="nav-link mt-4 c-themeA" style="font-size:28px">
@@ -26,7 +26,7 @@ Moola
   
     <div class="offcanvas-body">
 
-      <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 pt-4"><!--LI" pt-4 moves list down-->
+      <ul class="navbar-nav justify-content-end align-items-lg-center flex-grow-1 pe-3 pt-4"><!--LI" pt-4 moves list down-->
        
 
         <li class="nav-item dropdown me-3 menu-i-hov">
@@ -100,22 +100,22 @@ Moola
           <a class="nav-link" href="#"></a>
         </li>
 
-        <li class="nav-item me-3 menu-i-hov">
+        <li class="nav-item me-3 menu-i-hov txt-center">
           <a class="nav-link ms-2" style="color: #00a86b" href="#">Log in</a><!--LI: changed color-->
         </li>
 
   
-       <li class="nav-item">
+       <li class="nav-item txt-center">
        <a href="signUp.html">
-       <button  class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold me-5 " type="submit"
-       style="height: 40px; !important;"><!--LI: me-5 moves button to left-->
+       <button  class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold me-5" type="submit"
+       style="height: 40px !important;"><!--LI: me-5 moves button to left-->
        Sign Up
    </button>
      </a>
        </li>
 
        <li >
-       <div class="mt-mdA-4">
+       <div class="mt-mdA-4 switcher-desktop">
          <input type="checkbox" class="checkbox" id="checkbox">
          <label for="checkbox" class="label theme-switcher">
          <i class="fas fa-moon"></i>

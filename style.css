@@ -38,6 +38,7 @@ body {
   /*font-family: "Open Sans", sans-serif;*/
   font-family: 'Outfit', sans-serif; /*LI*/
   background-color: var(--dark-light);
+  overflow-x: hidden;
 }
 
 /* Reset */
@@ -175,6 +176,19 @@ body {
 }
 
 /* Colors */
+.navbar-toggler:focus,.offcanvas-body .nav-link:focus {
+  box-shadow: none;
+  box-shadow: 0px 0px 0 2px #00a86b;
+}
+
+.offcanvas-body .nav-link:focus {
+  color: var(--primary);
+}
+
+.nav-link.active {
+  background: transparent !important;
+}
+
 .light-grey-content {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -260,6 +274,27 @@ body {
 
 /* Components */
 
+.under-page {
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  z-index: 100;
+}
+
+.switcher-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .under-page {
+    display: none;
+  }
+
+  .switcher-desktop {
+    display: block;
+  }
+}
+
 /*LI*/
 .btnA {
   border: none;
@@ -274,6 +309,9 @@ body {
 .navbar-toggler-icon {
   background-image: var(--hamburguer);
 }
+
+
+
 /*end LI*/
 
 .box-benefitsA {
@@ -815,10 +853,6 @@ body {
   width: 75%;
 }
 
-.home-moola-header-h2 {
-  width: 200% !important;
-}
-
 .home-banner {
   background-color: var(--dark-light);
 }
@@ -975,6 +1009,11 @@ body {
 
 /*LI: Bootstrap navbar dropdown with hover effect */
 /*https://bootstrap-menu.com/detail-basic-hover.html*/
+.navbar-brand img {
+  width: 5rem;
+  height: 4rem;
+}
+
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: none;
@@ -984,6 +1023,11 @@ body {
   }
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
+  }
+
+  .navbar-brand img {
+    width: 7.2rem;
+    height: 7.5rem;
   }
 }
 
@@ -1017,6 +1061,13 @@ body {
   .home-moola-header-cols {
     padding-top: 0%;
     width: 100% !important;
+  }
+}
+
+@media (max-width: 585px) {
+  .home-moola-header-btn {
+    font-size: 1rem;
+    padding: 1rem 2rem;
   }
 }
 
