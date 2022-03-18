@@ -47,6 +47,10 @@ body {
 
 /* utilities */
 
+.carousel.slide {
+  height: 200px;
+}
+
 .row {
   overflow: hidden;
 }
