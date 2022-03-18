@@ -107,7 +107,7 @@ Moola
   
        <li class="nav-item txt-center">
        <a href="signUp.html">
-       <button  class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold me-5" type="submit"
+       <button  class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold " type="submit"
        style="height: 40px !important;"><!--LI: me-5 moves button to left-->
        Sign Up
    </button>
