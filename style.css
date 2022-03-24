@@ -12,8 +12,8 @@
   --close: invert(1) grayscale(100%) brightness(200%);
 
   /* Green Colors */
-  --green-primary: #00a86b;
-  --green-light: #6aac0e;
+  --green-primary: rgb(0, 168, 107);
+  --green-light: rgb(106, 172, 14);
 }
 
 .light-theme {
