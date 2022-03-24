@@ -34,8 +34,8 @@ Moola
             data-bs-toggle="dropdown" aria-expanded="false">
             Products
           </a>
-          <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
-            <ul class="dropdown-menu mt-3 py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+          <!--<ul class="dropdown-menu py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+            <ul class="dropdown-menu py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
             <li>
               <a class="dropdown-item py-2 fs-4 c-themeA" href="Inflation Fund.html">Crypto Inflation Fund</a>
             </li>
@@ -56,8 +56,8 @@ Moola
             data-bs-toggle="dropdown" aria-expanded="false">
             Technology
           </a>
-          <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
-            <ul class="dropdown-menu mt-3 py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+          <!--<ul class="dropdown-menu py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+            <ul class="dropdown-menu py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
             <li>
               <a class="dropdown-item py-2 fs-4 c-themeA" href="trading.html">Moola Platform</a>
             </li>
@@ -78,8 +78,8 @@ Moola
             data-bs-toggle="dropdown" aria-expanded="false">
             Company
           </a>
-          <!--<ul class="dropdown-menu mt-3 py-2" aria-labelledby="offcanvasNavbarDropdown">-->
-            <ul class="dropdown-menu mt-3 py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
+          <!--<ul class="dropdown-menu py-2" aria-labelledby="offcanvasNavbarDropdown">-->
+            <ul class="dropdown-menu py-2 bg-themeA" aria-labelledby="offcanvasNavbarDropdown">  <!--LI-->
             <li>
               <a class="dropdown-item py-2 fs-4 c-themeA" href="trading.html">About us</a>
             </li>
@@ -107,7 +107,7 @@ Moola
   
        <li class="nav-item txt-center">
        <a href="signUp.html">
-       <button  class="btnA btn-greenA py-0 my-auto text-uppercase text-white fw-bold " type="submit"
+       <button  class="btnA btn-SignUp py-0 my-auto text-uppercase text-white fw-bold " type="submit"
        style="height: 40px !important;"><!--LI: me-5 moves button to left-->
        Sign Up
    </button>
