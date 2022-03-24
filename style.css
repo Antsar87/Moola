@@ -10,6 +10,10 @@
   --arrow: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
   --hamburguer: url(img/hamburguer.svg);
   --close: invert(1) grayscale(100%) brightness(200%);
+
+  /* Green Colors */
+  --green-primary: #00a86b;
+  --green-light: #6aac0e;
 }
 
 .light-theme {
@@ -215,7 +219,7 @@ body {
 }
 /*LI: added Jade*/
 .text-jade {
-  color: #00a86b;
+  color: var(--green-primary);
 }
 
 .links-color {
@@ -233,12 +237,12 @@ body {
 }
 
 .btn-greenA {
-  background: #00a86b;
+  background: var(--green-primary);
   color: #fff;
 }
 
 .btn-greenA:hover {
-  background: #00a86b; /*jade*/
+  background: var(--green-primary); /*jade*/
   color: #fff;
   /*LI: brighten on hover*/
   box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
@@ -272,8 +276,7 @@ body {
 }
 
 .c-green {
-  color: #72b00f;
-  color: #00a86b;
+  color: var(--green-primary);
 }
 
 .offcanvas {
@@ -477,7 +480,7 @@ body {
 }
 
 .confidenceA .contentA .info .list.list-circle li::marker {
-  color: #00a86b; /*LI: change color*/
+  color: var(--green-primary); /*LI: change color*/
 }
 
 .confidenceA .contentA img {
@@ -529,7 +532,7 @@ body {
 /*https://stackoverflow.com/questions/66567697/bootstrap-accordion-css-styling-when-active*/
 
 .accordion {
-  color: #00a86b;
+  color: var(--green-primary);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -542,18 +545,18 @@ body {
 
 .accordion-button:not(.collapsed) {
   color: var(--dark-light) !important;
-  background-color: #00a86b !important;
+  background-color: var(--green-primary) !important;
 }
 
 .accordion-button:link,
 .accordion-button:visited,
 .accordion-button:hover,
 .accordion-button:active {
-  background-color: #00a86b !important;
+  background-color: var(--green-primary) !important;
   color: var(--dark-light) !important;
   text-decoration: none !important;
   border: hidden !important;
-  border-color: #00a86b !important;
+  border-color: var(--green-primary) !important;
   box-shadow: 0px !important;
 }
 
@@ -564,7 +567,7 @@ body {
 
 .accordion-button:focus {
   z-index: 3;
-  border-color: #00a86b !important;
+  border-color: var(--green-primary) !important;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(27, 28, 46) !important;
 }
@@ -759,8 +762,8 @@ body {
 }
 
 .nav-tabs > li .active {
-  border-bottom: 2px solid #6aac0e !important;
-  color: #6aac0e !important;
+  border-bottom: 2px solid var(--green-light) !important;
+  color: var(--green-light) !important;
   font-weight: bold;
 }
 
@@ -814,10 +817,10 @@ body {
 }
 
 .float-label-field.focus label {
-  color: #00a86b;
+  color: var(--green-primary);
 }
 .float-label-field.focus input {
-  border-bottom: solid 1px #00a86b;
+  border-bottom: solid 1px var(--green-primary);
 }
 .float-label-field.float label {
   opacity: 1;
@@ -956,7 +959,7 @@ body {
 .dropdown-menu > li > a:hover {
   background-image: none;
   background-color: transparent;
-  color: #00a86b;
+  color: var(--green-primary);
 }
 
 /*end LI*/
