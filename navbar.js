@@ -3,7 +3,7 @@ const nav = document.querySelector('.navbar');
 nav.innerHTML = `  
 <div class="container-fluid">
 
-<a class="navbar-brand" href="index.html">
+<a class="navbar-brandA" href="index.html">
     <img src="img/Jade.svg" alt="logo" class="d-inline-block align-text-top" />
 </a>
 
@@ -125,10 +125,6 @@ Moola
        </div>
        </li> 
       </ul>
-
-
-
-     
     </div>
   </div>
 </div>
