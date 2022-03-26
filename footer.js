@@ -28,21 +28,23 @@ footer.innerHTML = `
     </p>
     <ul class="list-unstyled">
       <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Inflation-Protected Fund</a>
+        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Crypto-Tech Fund</a>
       </li>
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Crypto-Winter Fund</a>
       </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Xtra Gold Fund</a>
-      </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Crypto-Tech Fund</a>
-      </li>
+
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Growth ETF</a>
       </li>
 
+      <li>
+        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Inflation-Protected Fund</a>
+      </li>
+
+      <li>
+        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Xtra Gold Fund</a>
+      </li>
     </ul>
 
   </div>

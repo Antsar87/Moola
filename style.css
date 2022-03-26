@@ -254,7 +254,7 @@ body {
   color: var(--green-primary);
 }
 
-.btn-SignUp {
+.btn-greenFill {
   background: var(--green-primary);
   color: #fff;
 }
@@ -1317,33 +1317,118 @@ circle {
 }
 
 /* portfolio baoble */
-.portfolio-baoble main {
+.content-baoble main {
   font-size: 125%;
   color: var(--primary);
+  flex-basis: 47%;
+  padding-right: 20px;
 }
 
-.portfolio-baoble main p {
+.content-baoble main p {
   font-weight: 300;
 }
 
-.portfolio-baoble main p span {
-  font-weight: 700;
+.content-baoble main p span {
+  font-weight: 500;
 }
 
-/* component */
+
+/* components */
+
 .title-section {
   color: var(--gren-dark);
   text-decoration: none;
-  font-size: 2.8em;
+  font-size: 50px;
   font-weight: 100;
   transition: all 0.25s;
 }
 
-.title-section:hover {
+.title-section:hover,
+.baoble-card h2 a:hover {
   color: black;
 }
 
-/* components */
+.baoble-card {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.baoble-card--yellow h2 a,
+.baoble-card--yellow .baoble-box {
+  color: #e0cf82;
+}
+
+.baoble-card--yellow .baoble-box button {
+  background: #e0cf82;
+}
+
+.baoble-card--red h2 a,
+.baoble-card--red .baoble-box {
+  color: #7a0808;
+}
+
+.baoble-card--red .baoble-box button {
+  background: #7a0808;
+}
+
+.baoble-card--blue h2 a,
+.baoble-card--blue .baoble-box {
+  color: #003984;
+}
+
+.baoble-card--blue .baoble-box button {
+  background: #003984;
+}
+
+.baoble-card--orange h2 a,
+.baoble-card--orange .baoble-box {
+  color: #ff7b00;
+}
+
+.baoble-card--orange .baoble-box button {
+  background: #ff7b00;
+}
+
+.baoble-card h2 a {
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.25s;
+  font-weight: 700;
+}
+
+.baoble-card p {
+  font-size: 1em;
+  color: var(--primary);
+} 
+
+.baoble-card ul {
+  list-style: none;
+  line-height: 1.4em;
+  padding-top: 30px;
+}
+
+.baoble-card ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #999;
+}
+
+.baoble-card ul li::before {
+  content: '+';
+  color: #acc435;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.baoble-card img {
+  width: 100%;
+}
+
 .baoble-box {
   display: flex;
   align-items: center;
@@ -1355,8 +1440,8 @@ circle {
   cursor: pointer;
 }
 
-.baoble-box.baoble-box-sm h2{
-  font-size: 15px;
+.baoble-box.baoble-box-sm h2 {
+  font-size: 13px;
 }
 
 .baoble-box:hover {
@@ -1365,6 +1450,7 @@ circle {
 
 .baoble-box h2 {
   transition: all 1s;
+  margin: 0;
 }
 
 .baoble-box:hover button {
@@ -1383,8 +1469,4 @@ circle {
   content: '\f0da';
   font-family: 'FontAwesome';
   color: white;
-}
-
-.baoble-items .baoble-items__card img{
-  width: 100%;
 }
