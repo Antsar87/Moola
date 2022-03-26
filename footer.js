@@ -120,23 +120,68 @@ footer.innerHTML = `
       <div class="accordion-body">
       <ul class="list-unstyled">
       <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Inflation-Protected Fund</a>
+          <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Crypto-Tech Fund</a>
       </li>
+
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Crypto-Winter Fund</a>
       </li>
+        
+      <li>
+         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Growth ETF</a>
+      </li>
+      
+      <li>
+        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Inflation-Protected Fund</a>
+      </li>
+
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Xtra Gold Fund</a>
-      </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Crypto-Tech Fund</a>
-      </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Growth ETF</a>
       </li>
 
     </ul>
       </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+  <h2 class="accordion-header" id="footer-headingOne">
+    <button
+      class="accordion-button collapsed bg-themeA fs-10"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#footer-collapseThree"
+      aria-expanded="false"
+      aria-controls="flush-collapseOne"
+    >
+    Company
+    </button>
+  </h2>
+  <div
+    id="footer-collapseThree"
+    class="accordion-collapse collapse"
+    aria-labelledby="flush-headingOne"
+    data-bs-parent="#accordionFlushExample"
+  >
+    <div class="accordion-body">
+    <ul class="list-unstyled">
+    <li>
+      <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">About us</a>
+    </li>
+
+    <li>
+    <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Governance</a>
+  </li>
+    
+    <li>
+      <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Investing</a>
+    </li>
+   
+    <li>
+      <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Strategies</a>
+    </li>
+
+  </ul>
     </div>
   </div>
 
@@ -162,14 +207,15 @@ footer.innerHTML = `
       <div class="accordion-body">
       <ul class="list-unstyled">
       <li>
+        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Blockchain</a>
+      </li>
+      <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Moola Platform</a>
       </li>
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Moola Protocol</a>
       </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Blockchain</a>
-      </li>
+      
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Security</a>
       </li>
@@ -178,43 +224,7 @@ footer.innerHTML = `
     </div>
   </div>
 
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="footer-headingOne">
-      <button
-        class="accordion-button collapsed bg-themeA fs-10"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#footer-collapseThree"
-        aria-expanded="false"
-        aria-controls="flush-collapseOne"
-      >
-      Company
-      </button>
-    </h2>
-    <div
-      id="footer-collapseThree"
-      class="accordion-collapse collapse"
-      aria-labelledby="flush-headingOne"
-      data-bs-parent="#accordionFlushExample"
-    >
-      <div class="accordion-body">
-      <ul class="list-unstyled">
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">About us</a>
-      </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Strategies</a>
-      </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Investing</a>
-      </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Governance</a>
-      </li>
-
-    </ul>
-      </div>
-    </div>
+ 
   </div>
 </div>
 
