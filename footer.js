@@ -54,15 +54,16 @@ footer.innerHTML = `
 
     <p class="c-themeA fs-10 fw-light">Technology</p>
     <ul class="list-unstyled">
+    <li>
+        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Blockchain</a>
+      </li>
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Moola Platform</a>
       </li>
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Moola Protocol</a>
       </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Blockchain</a>
-      </li>
+      
       <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Security</a>
       </li>
@@ -80,15 +81,15 @@ footer.innerHTML = `
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">About us</a>
       </li>
       <li>
+      <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Governance</a>
+      </li>
+      <li>
+      <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Investing</a>
+      </li>
+      <li>
         <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Strategies</a>
       </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Investing</a>
-      </li>
-      <li>
-        <a href="#" class="c-themeA text-decoration-none fs-9 fw-300">Governance</a>
-      </li>
-
+      
     </ul>
 
 
