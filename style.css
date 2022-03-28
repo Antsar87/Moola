@@ -750,10 +750,10 @@ body {
 /* code of home */
 
 .home-moola-header {
-  background-image: url('//marketing.etorostatic.com/cache1/hp/v_242/images/hp_cover_202101/slider_top/slide_1_bg.jpg');
-  background-position-x: center;
+  background: url('//marketing.etorostatic.com/cache1/hp/v_242/images/hp_cover_202101/slider_top/slide_1_bg.jpg') center right / cover;
+  /* background-position-x: center;
   background-position-y: center;
-  background-size: cover;
+  background-size: cover; */
   height: 75vh;
   overflow: hidden;
 }
